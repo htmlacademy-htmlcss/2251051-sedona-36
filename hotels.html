@@ -69,7 +69,7 @@
               <div class="page-navigation-item">Гостиницы</div>
             </li>
           </ul>
-          <h2 class="hotels-pick-type">Инфраструктура</h2>
+          <h2 class="hotels-pick-type">Инфраструктура:</h2>
           <ul class="infrastructure-list">
             <li>
               <div class="infrastructure-list-item">
@@ -93,28 +93,50 @@
           <h2 class="hotels-pick-type">Тип Жилья:</h2>
           <ul class="housing-list">
             <li>
-              <div class="infrastructure-list-item">
+              <div class="housing-list-item">
                 <input type="radio" checked>
                   Гостиница
               </div>
             </li>
             <li>
-              <div class="infrastructure-list-item">
+              <div class="housing-list-item">
                 <input type="radio">
                   Мотель
               </div>
             </li>
             <li>
-              <div class="infrastructure-list-item">
+              <div class="housing-list-item">
                 <input type="radio">
                   Аппартаменты
               </div>
             </li>
-
           </ul>
+          <ul class="cost-selection">
+            <li>
+              от - до
+            </li>
+            <li>
+              ползунок
+            </li>
+          </ul>
+          <ul class="pick-buttons">
+            <li>
+              <input type="button" value="Применить">
+                <span class="visually-hidden">
+                  Применить
+                </span>
+            </li>
+            <li>
+              <input type="button" value="Сбросить">
+                <span class="visually-hidden">
+                  Сбросить
+                </span>
+            </li>
+          </ul>
+      </section>
+      <section class="hotels-list">
 
-
-
+      </section>
 
 
 
@@ -127,14 +149,13 @@
       <section class="subscribe">
         <h1 class="subscribe-title">Подпишитесь на рассылку</h1>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="e-mail"></label>
-          <input type="text" id="e-mail" name="e-mail" value="Ваш e-mail">
-        </form>
-        <input type="button" value="Подписаться на рассылку">
-          <span>
+          <input type="text" id="e-mail" name="e-mail" placeholder="Ваш e-mail">
+          <button class="button" type="submit">
             Подписаться
-          </span>
+          </button>
+        </form>
       </section>
     </main>
   </body>
