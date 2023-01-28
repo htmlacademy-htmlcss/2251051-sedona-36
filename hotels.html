@@ -56,7 +56,7 @@
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main-hotels">
-      <section class="hotels">
+      <section class="hotels-title">
         <h1 class="hotels-pick">Подобрать гостиницу</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -75,48 +75,71 @@
               </a>
             </li>
           </ul>
-          <h2 class="hotels-filter">Инфраструктура:</h2>
-          <ul class="infrastructure-list">
-            <li>
-              <div class="infrastructure-list-item">
-                <input type="checkbox" checked>
-                  Бассейн
-              </div>
-            </li>
-            <li>
-              <div class="infrastructure-list-item">
-                <input type="checkbox" checked>
-                  Парковка
-              </div>
-            </li>
-            <li>
-              <div class="infrastructure-list-item">
-                <input type="checkbox">
-                  Wi-Fi
-              </div>
-            </li>
-          </ul>
-          <h2 class="hotels-filter">Тип Жилья:</h2>
-          <ul class="housing-list">
-            <li>
-              <div class="housing-list-item">
-                <input type="radio" checked>
-                  Гостиница
-              </div>
-            </li>
-            <li>
-              <div class="housing-list-item">
-                <input type="radio">
-                  Мотель
-              </div>
-            </li>
-            <li>
-              <div class="housing-list-item">
-                <input type="radio">
-                  Аппартаменты
-              </div>
-            </li>
-          </ul>
+      </section>
+      <section class="filte-list">
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
+          <form class="hotels-filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="hotels-filter-group">
+              <legend class="hotels-filter-title">Инфраструктура:</legend>
+                <ul class="hotels-filter-list">
+                  <li class="hotels-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="swimpool" checked>
+                        Бассейн
+                    </label>
+                  </li>
+                  <li class="hotels-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking" checked>
+                        Парковка
+                    </label>
+                  </li>
+                  <li class="hotels-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-fi">
+                        Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+            <fieldset class="hotels-filter-group">
+              <legend class="hotels-filter-title">Тип Жилья:</legend>
+              <ul class="hotels-filter-list">
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
+                    Гостиница
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="housing-type" value="motel">
+                      Мотель
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="housing-type" value="apartments">
+                      Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+
+
+            <ul class="hotel-filter-buttons">
+              <li>
+                <button class="button" type="submit">Применить</button>
+              </li>
+              <li>
+                <button class="button" type="submit">Сбросить</button>
+              </li>
+            </ul>
+
+          </form>
+
+
+
           <ul class="hotels-filter">
             <li>
               от - до
@@ -125,20 +148,7 @@
               ползунок
             </li>
           </ul>
-          <ul class="pick-buttons">
-            <li>
-              <input type="button" value="Применить">
-                <span class="visually-hidden">
-                  Применить
-                </span>
-            </li>
-            <li>
-              <input type="button" value="Сбросить">
-                <span class="visually-hidden">
-                  Сбросить
-                </span>
-            </li>
-          </ul>
+
       </section>
     <header class="inner-header">
       <h2 class="visually-hidden">Список гостиниц</h2>
