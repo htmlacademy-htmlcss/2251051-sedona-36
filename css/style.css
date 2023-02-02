@@ -1,3 +1,27 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-display: swap;
+}
+
+body {
+   font-family: "PT Sans", sans-serif;
+   font-size: 16px;
+   line-height: 24px;
+}
+
 .visually-hidden {
     position: absolute;
     overflow: hidden;
@@ -11,6 +35,16 @@
 
 .hero-background-welcome {
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: 371px;
+}
+
+.hero-background {
+    position: relative;
+    padding-top: 51px;
+    padding-bottom: 82px;
+    margin-bottom: 80px;
+    background-image: url(../images/vector-elements/divider.svg), url(../images/backgrounds/index-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px 57px, 1200px 485px;
+    background-position: 0 428px, 0 0;
 }
