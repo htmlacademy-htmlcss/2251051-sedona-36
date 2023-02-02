@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Город-курорт Седона</title>
+    <link href="css/style.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   </head>
 
@@ -14,7 +15,7 @@
         <!--Главная, О Седоне, Гостиницы-->
         <ul class="navigation-list">
           <li class="navigation-item">
-            <img class="main-header-logo" src="images/style-elements/header-logo.svg" width="140" height="70"
+            <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70"
               alt="Логотип сайта Sedona">
           </li>
           <li class="navigation-item">
@@ -31,13 +32,19 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <button class="navigation-link" type="button">
-              <img src="images/navigation/search.svg" width="20" height="20" alt="Поиск">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="none">
+                <path fill="#000"
+                  d="m18.5 17.008-3.7-3.68c1-1.292 1.7-2.983 1.7-4.872C16.5 4.08 12.9.5 8.5.5s-8 3.68-8 8.055c0 4.376 3.6 7.956 8 7.956 1.8 0 3.5-.597 4.9-1.69l3.7 3.679 1.4-1.492Zm-10-2.486c-3.3 0-6-2.685-6-5.967 0-3.282 2.7-5.967 6-5.967s6 2.685 6 5.967c0 3.282-2.7 5.967-6 5.967Z" />
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </button>
           </li>
           <li class="navigation-item">
             <button class="navigation-link" type="button">
-              <img src="images/navigation/favorites.svg" width="20" height="20" alt="Поиск">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+                <path fill="#000"
+                  d="M8.9 17c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C.4 7.8 0 6.6 0 5.4 0 2.4 2.4 0 5.5 0 6.8 0 8 .5 9 1.3 10 .5 11.3 0 12.5 0c3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
+              </svg>
               <span class="visually-hidden">Избранное</span>
             </button>
           </li>
@@ -50,9 +57,10 @@
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main-index">
-      <section class="hero">
+      <section class="hero hero-background">
         <h1 class="visually-hidden">Город-курорт Седона</h1>
-        <img src="#" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+        <img class="hero-background-welcome" src="images/vector-elements/welcome.svg" width="458" height="352"
+          alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
         <!--background-image-->
       </section>
       <section class="advantages">
@@ -96,14 +104,17 @@
         </div>
         <ul class="services-list">
           <li class="services-item">
+            <img src="/images/vector-elements/house.svg" width="75" height="72" alt="Лого жилья">
             <h3 class="services-title">Жильё</h3>
             <p class="services-description">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="services-item">
+            <img src="/images/vector-elements/food.svg" width="74" height="70" alt="Лого еды">
             <h3 class="services-title">Еда</h3>
             <p class="services-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="services-item">
+            <img src="/images/vector-elements/souvenirs.svg" width="64" height="76" alt="Лого сувениров">
             <h3 class="services-title">Сувениры</h3>
             <p class="services-description">Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -117,6 +128,7 @@
         <span class="visually-hidden">Поиск гостиницы в Седоне</span>
       </section>
       <section class="subscribe">
+        <!--background-image-->
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
@@ -134,16 +146,29 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="15" fill="none">
+                <path fill="#83B3D3" fill-rule="evenodd"
+                  d="M24.116 1.804c.166-.546 0-.948-.795-.948h-2.625c-.668 0-.976.347-1.143.73 0 0-1.335 3.196-3.226 5.272-.612.602-.89.793-1.224.793-.167 0-.418-.19-.418-.738V1.804c0-.656-.184-.948-.74-.948H9.817c-.417 0-.668.304-.668.593 0 .621.946.765 1.043 2.513V7.76c0 .833-.153.984-.487.984-.89 0-3.055-3.21-4.34-6.885-.249-.715-.5-1.003-1.172-1.003H1.566c-.75 0-.9.347-.9.73 0 .682.89 4.07 4.145 8.551 2.17 3.06 5.225 4.72 8.008 4.72 1.67 0 1.875-.369 1.875-1.004V11.54c0-.737.158-.884.687-.884.39 0 1.057.192 2.615 1.667 1.78 1.75 2.073 2.533 3.075 2.533h2.625c.75 0 1.126-.368.91-1.096-.238-.724-1.088-1.775-2.215-3.022-.612-.71-1.53-1.475-1.809-1.858-.389-.49-.278-.71 0-1.147 0 0 3.2-4.426 3.533-5.929h.001Z"
+                  clip-rule="evenodd" />
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="none">
+                <path fill="#83B3D3"
+                  d="M16.785.956.84 7.104C-.248 7.541-.24 8.148.64 8.42l4.094 1.277 9.472-5.976c.448-.272.857-.126.52.173l-7.673 6.925H7.05l.002.001-.283 4.22c.414 0 .597-.19.829-.414l1.988-1.934 4.136 3.055c.762.42 1.31.205 1.5-.706l2.715-12.795c.278-1.114-.425-1.618-1.153-1.29Z" />
+              </svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" fill="none">
+                <path fill="#83B3D3"
+                  d="M18.94.356H3.507C1.647.356.333 1.95.333 3.756V13.85c0 1.913 1.314 3.506 3.174 3.506H19.16c1.642 0 3.174-1.593 3.174-3.4v-10.2c-.219-1.806-1.532-3.4-3.393-3.4ZM7.995 12.894V4.819l7.333 4.037-7.333 4.038Z" />
+              </svg>
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
