@@ -28,6 +28,7 @@ body {
     background-color: #ffffff;
 }
 
+
 .visually-hidden {
     position: absolute;
     overflow: hidden;
@@ -38,6 +39,19 @@ body {
     padding: 0;
     border: 0;
 }
+
+hr.solid {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* hr.solid {
+    border-top: 60px solid #bbb;
+
+
+
+
+    color: rgba(0, 0, 0, 0.3);
+} */
 
 /* links */
 
@@ -179,7 +193,7 @@ body {
     width: 191px;
     height: 36px;
     /* background: none; */
-    background-color: #82B3D3;
+    background-color: #000000;
     /* temp background */
 }
 
@@ -192,6 +206,65 @@ body {
     border-color: #e5e5e5;
     border-style: solid;
 }
+
+/* p and text */
+
+.advantages-main-title,
+.services-main-title,
+.search-main-title,
+.subscribe-main-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+    color: #000000;
+}
+
+.hotel-list-found {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-decoration: none;
+    text-align: left;
+    text-transform: uppercase;
+    vertical-align: top;
+    color: #000000;
+}
+
+.advantages-main-description,
+.services-main-description,
+.search-main-description,
+.subscribe-main-description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: none;
+    vertical-align: top;
+    color: #333333;
+}
+
+
+
+
+
+
+
+
+
+
+
+.white-text {
+    color: #ffffff;
+    background-color: #000000;
+    /* temp background */
+}
+
+
 
 
 
