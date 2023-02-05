@@ -21,11 +21,11 @@
 /* body */
 
 body {
-   font-family: "PT Sans", sans-serif;
-   font-size: 16px;
-   line-height: 24px;
-   color: #000000;
-   background-color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -46,20 +46,54 @@ body {
     font-size: 20px;
     line-height: 24px;
     text-decoration: none;
-    color: #000000;
-    text-transform: capitalize;
     text-align: center;
-  }
+    text-transform: capitalize;
+    color: #000000;
+}
 
+.footer-contacts a {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    vertical-align: top;
+}
 
+.breadcrumbs-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    text-align: left;
+    color: #ffffff;
+    background-color: #000000;
+    /* temp background-color*/
+}
 
+.hotel-card-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #000000;
+}
 
+.pagination-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    background-color: #82b3d3;
+}
 
-
-
-
-
-
+.pagination-current {
+    color: #000000;
+    background-color: #f2f2f2;
+}
 
 
 
@@ -72,6 +106,7 @@ body {
 .hero-background-welcome {
     position: relative;
     margin-left: 371px;
+    color: #000000;
 }
 
 .hero-background {
@@ -81,6 +116,8 @@ body {
     margin-bottom: 80px;
     background-image: url(../images/vector-elements/divider.svg), url(../images/backgrounds/index-background.jpg);
     background-repeat: no-repeat;
-    background-size: 1200px 57px, 1200px 485px;
+    background-size: 100% auto, 100% auto;
     background-position: 0 428px, 0 0;
+    color: #000000;
+    background-color: #ffffff;
 }
