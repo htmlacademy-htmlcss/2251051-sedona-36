@@ -129,6 +129,7 @@ li {
 }
 
 .button {
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -150,6 +151,7 @@ li {
 
 .find-button {
     font-size: 20px;
+    line-height: 36px;
     width: 376px;
     height: 36px;
     background-color: #756157;
@@ -157,6 +159,7 @@ li {
 
 .subscribe-button {
     font-size: 20px;
+    line-height: 36px;
     width: 232px;
     height: 36px;
     background-color: #82B3D3;
@@ -283,10 +286,9 @@ li {
     color: #ffffff;
 }
 
-.hotels-filter-item {
+.control {
     font-size: 18px;
     line-height: 23px;
-
     color: #ffffff;
 }
 
