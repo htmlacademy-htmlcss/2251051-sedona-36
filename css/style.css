@@ -18,15 +18,28 @@
 
 /* body */
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #f2f2f2;
     /* #f2f2f2 заменил временно на томат, т.к. на сером ничего не видно */
+    outline: 5px solid turquoise;
+    outline-offset: -5px;
 }
 
+.main-index {
+    flex-grow: 1;
+}
 
 .visually-hidden {
     position: absolute;
@@ -64,7 +77,6 @@ li {
     list-style-type: none;
 }
 
-/* links */
 
 .navigation-link {
     font-weight: 700;
