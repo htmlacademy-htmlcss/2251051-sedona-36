@@ -22,11 +22,43 @@ html {
     height: 100%;
 }
 
+.main-header {
+    padding: 0 70px;
+}
+
+.main-header-logo {
+    margin-right: 28px;
+    z-index: 1;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.navigation-user {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navigation-link {
+    padding: 20px 16px;
+}
+
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -77,6 +109,28 @@ li {
     list-style-type: none;
 }
 
+.navigation {
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+/* .navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 460px;
+}
+
+.navigation-user {
+    width: 312px;
+    margin-left: auto;
+} */
+
+
+
+
+
+/* links */
 
 .navigation-link {
     font-weight: 700;
@@ -114,6 +168,19 @@ li {
 }
 
 /* buttons */
+
+.navigation-user-favorites-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 10px;
+    color: #ffffff;
+    width: 20px;
+    height: 20px;
+    background-color: #7DB54F;
+    border-radius: 50%;
+}
 
 .pagination-button {
     font-weight: 700;
@@ -156,6 +223,7 @@ li {
     width: 160px;
     height: 36px;
     background-color: #756157;
+    margin-left: 20px;
 }
 
 .find-button {
