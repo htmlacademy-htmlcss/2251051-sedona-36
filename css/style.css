@@ -52,12 +52,11 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
     width: 1200px;
-    margin: 0 auto;
 
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
@@ -115,9 +114,7 @@ li {
     height: 64px;
 }
 
-/* advantages list */
-
-
+/* index advantages list */
 
 .advantages-list {
     margin: 0;
@@ -178,9 +175,50 @@ li {
     align-items: center;
 }
 
+/* hotels filter */
 
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
+.hotels-filter-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
+.hotels-sort-wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.box-hotel-filter-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-card-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hotel-card {
+    width: 340px;
+    height: 428px;
+}
+
+.pagination-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
 
 /* links */
@@ -356,7 +394,7 @@ li {
     color: #000000;
 }
 
-.hotel-list-found {
+.hotels-found {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;

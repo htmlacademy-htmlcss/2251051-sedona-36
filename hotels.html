@@ -13,11 +13,9 @@
     <header class="main-header">
       <nav class="navigation">
         <!--Главная, О Седоне, Гостиницы-->
+        <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70"
+          alt="Логотип сайта Sedona">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70"
-              alt="Логотип сайта Sedona">
-          </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -29,7 +27,7 @@
           </li>
         </ul>
         <!--Поиск, избранное, кнопка-->
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <button class="button" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
@@ -45,11 +43,12 @@
                 <path fill="#000"
                   d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
               </svg>
-              <span class="visually-hidden">Избранное</span>
             </button>
+            <span class="visually-hidden">Избранное</span>
           </li>
+          <li><span class="navigation-user-favorites-number">12</span></li>
           <li class="navigation-item">
-            <button class="button brown-button want-here-button" type="button">Хочу сюда!</button>
+            <button class="button want-here-button" type="button">Хочу сюда!</button>
             <span class="visually-hidden">Поиск гостиницы в Седоне</span>
           </li>
         </ul>
@@ -67,13 +66,13 @@
                   <path fill="#fff" d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
                   <path fill="#fff" d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
                 </svg>
-                <div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="20" fill="none">
-                    <path fill="#fff"
-                      d="m6.915 9.969-4.75-4.25c-.25-.25-.75-.25-1.125 0s-.25.75 0 1l4.125 3.75-4 3.75c-.25.25-.25.75 0 1 0 .125.375.25.5.25s.375-.125.5-.25l4.75-4.25a.585.585 0 0 0 0-1Z" />
-                  </svg>
-                </div>
-              </a>
+            <li class="breadcrumbs-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="20" fill="none">
+                <path fill="#fff"
+                  d="m6.915 9.969-4.75-4.25c-.25-.25-.75-.25-1.125 0s-.25.75 0 1l4.125 3.75-4 3.75c-.25.25-.25.75 0 1 0 .125.375.25.5.25s.375-.125.5-.25l4.75-4.25a.585.585 0 0 0 0-1Z" />
+              </svg>
+            </li>
+            </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -82,106 +81,110 @@
         </header>
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="hotels-filter" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="hotels-filter-group">
-            <legend class="hotels-filter-title">Инфраструктура:</legend>
-            <ul class="hotels-filter-list">
-              <li class="hotels-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" id="swimpool" name="swimpool" checked>
-                  Бассейн
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" id="parking" name="parking" checked>
-                  Парковка
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" id="wi-fi" name="wi-fi">
-                  Wi-Fi
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="hotels-filter-group">
-            <legend class="hotels-filter-title">Тип Жилья:</legend>
-            <ul class="hotels-filter-list">
-              <li class="hotels-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" id="hotel" name="housing-type" value="hotel"
-                    checked>Гостиница
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" id="motel" name="housing-type" value="motel">Мотель
-                </label>
-              </li>
-              <li class="hotels-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" id="apartments" name="housing-type"
-                    value="apartments">Апартаменты
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <div class="hotel-filter-buttons">
-            <button class="button apply-button" type="submit">Применить</button>
-            <button class="button reset-button" type="reset">Сбросить</button>
+          <div class="hotels-filter-wrapper">
+            <fieldset class="hotels-filter-group">
+              <legend class="hotels-filter-title">Инфраструктура:</legend>
+              <ul class="hotels-filter-list">
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" id="swimpool" name="swimpool" checked>
+                    Бассейн
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" id="parking" name="parking" checked>
+                    Парковка
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" id="wi-fi" name="wi-fi">
+                    Wi-Fi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="hotels-filter-group">
+              <legend class="hotels-filter-title">Тип Жилья:</legend>
+              <ul class="hotels-filter-list">
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" id="hotel" name="housing-type" value="hotel"
+                      checked>Гостиница
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" id="motel" name="housing-type" value="motel">Мотель
+                  </label>
+                </li>
+                <li class="hotels-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" id="apartments" name="housing-type"
+                      value="apartments">Апартаменты
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="box-hotel-filter-buttons">
+              <button class="button apply-button" type="submit">Применить</button>
+              <button class="button reset-button" type="reset">Сбросить</button>
+            </div>
           </div>
         </form>
       </section>
-      <section class="hotel-list-filter">
-        <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <p class=hotel-list-found>Найдено гостиниц: 38</p>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="hight-raiting">Высокий рейтинг</option>
-          <option value="stars">Число звёзд</option>
-        </select>
-        <button class="button-view" type="button">
-          <span class="visually-hidden">Показать карточки</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-            <g fill="#000" clip-path="url(#a)">
-              <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
-            </g>
-            <defs>
-              <clipPath id="a">
-                <path fill="#fff" d="M0 0h16v14H0z" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-        <button class="button-view" type="button">
-          <span class="visually-hidden">Показать на всю ширину</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-            <g fill="#000" clip-path="url(#a)">
-              <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
-            </g>
-            <defs>
-              <clipPath id="a">
-                <path fill="#fff" d="M0 0h16v14H0z" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-        <button class="button-view" type="button">
-          <span class="visually-hidden">Показать список</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
-            <g fill="#000" clip-path="url(#a)">
-              <path
-                d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
-            </g>
-            <defs>
-              <clipPath id="a">
-                <path fill="#fff" d="M0 0h16v14H0z" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
+      <section class="hotels">
+        <div class="hotels-sort-wrapper">
+          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+          <p class=hotels-found>Найдено гостиниц: 38</p>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешёвые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="hight-raiting">Высокий рейтинг</option>
+            <option value="stars">Число звёзд</option>
+          </select>
+          <button class="button-view" type="button">
+            <span class="visually-hidden">Показать карточки</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+              <g fill="#000" clip-path="url(#a)">
+                <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h16v14H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button class="button-view" type="button">
+            <span class="visually-hidden">Показать на всю ширину</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+              <g fill="#000" clip-path="url(#a)">
+                <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h16v14H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button class="button-view" type="button">
+            <span class="visually-hidden">Показать список</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" fill="none">
+              <g fill="#000" clip-path="url(#a)">
+                <path
+                  d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h16v14H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
         <ul class="hotel-card-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
