@@ -129,15 +129,24 @@ li {
 .advantages-item,
 .services-item {
     width: 400px;
-    padding: 85px 112px;
+    min-height: 384px;
 }
 
-.advantages-item:first-child,
-.advantages-item:last-child {
+.advantages-item-full {
     display: flex;
     width: 100%;
     background-color: #82B3D3;
     padding: 0;
+    color: #ffffff;
+}
+
+.advantages-wrapper-full {
+    margin: auto 0;
+    width: 400px;
+}
+
+.advantages-wrapper {
+    padding: 112px 0;
 }
 
 .advantages-item:nth-child(2),
@@ -430,8 +439,26 @@ li {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    padding-bottom: 31px;
     text-align: center;
     text-transform: uppercase;
+    width: 175px;
+    margin: 0 auto;
+}
+
+.advantages-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 31px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.advantages-item-full .advantages-title::after {
+    content: "";
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-description,
@@ -440,7 +467,11 @@ li {
     line-height: 21px;
     text-align: center;
     color: #333333;
+    margin: 0 auto;
+    width: 230px;
 }
+
+
 
 .hotel-card-type {
     font-size: 18px;
