@@ -39,6 +39,7 @@ html {
 .main-header-logo {
     margin-right: 28px;
     z-index: 1;
+    margin-bottom: -5px;
 }
 
 .navigation-list {
@@ -153,9 +154,12 @@ li {
     margin-bottom: 96px;
 }
 
-.advantages-about,
-.services-about {
+.advantages-about {
     margin-bottom: 70px;
+}
+
+.services-about {
+    margin-bottom: 64px;
 }
 
 .advantages-list {
@@ -262,6 +266,17 @@ li {
 }
 
 /* hotels filter */
+
+.hotel-pick-wrapper {
+    padding-top: 50px;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.hotels-pick {
+    margin: 0;
+    margin-bottom: 8px;
+}
 
 .breadcrumbs {
     margin: 0;
@@ -515,6 +530,7 @@ li {
 
 .advantages-main-title {
     width: 620px;
+    padding-bottom: 25px;
 }
 
 .services-main-title {
@@ -627,6 +643,14 @@ li {
     color: #ffffff;
 }
 
+.subscribe-hotels {
+    background-color: #ffffff;
+    padding-top: 96px;
+    padding-bottom: 104px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
 /* backgrounds */
 
 .divider {
@@ -652,8 +676,11 @@ li {
     position: relative;
     background-image: url(../images/backgrounds/catalog-background.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-color: #756157;
+    padding-top: 35px;
+    padding-bottom: 70px;
+    margin: 0 auto;
 }
 
 .subscribe-index {
