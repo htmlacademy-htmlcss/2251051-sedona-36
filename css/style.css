@@ -61,6 +61,15 @@ html {
     padding: 20px 16px;
 }
 
+.navigation-item:nth-child(1) .button,
+.navigation-item:nth-child(2) .button {
+    padding: 22px 12px;
+}
+
+.navigation-user li:last-child{
+    margin-left: 20px;
+}
+
 .page-wrapper {
     margin: 0 auto;
     width: 1200px;
@@ -556,7 +565,6 @@ li {
     width: 160px;
     height: 36px;
     background-color: #756157;
-    margin-left: 20px;
 }
 
 .find-button {
