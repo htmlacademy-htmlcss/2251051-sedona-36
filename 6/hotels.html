@@ -16,8 +16,10 @@
       <header class="main-header">
         <nav class="navigation">
           <!--Главная, О Седоне, Гостиницы-->
-          <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70"
-            alt="Логотип сайта Sedona">
+          <a class="header-logo">
+            <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70"
+              alt="Логотип сайта Sedona">
+          </a>
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
@@ -47,10 +49,8 @@
                     d="M9.9 19c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9C1.4 9.8 1 8.6 1 7.4 1 4.4 3.4 2 6.5 2 7.8 2 9 2.5 10 3.3c1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
                 </svg>
                 <span class="visually-hidden">Избранное</span>
+                <!-- <span class="navigation-user-favorites-number">12</span> -->
               </button>
-            </li>
-            <li>
-              <span class="navigation-user-favorites-number">12</span>
             </li>
             <li class="navigation-item">
               <button class="button want-here-button" type="button">Хочу сюда!</button>
@@ -207,7 +207,7 @@
           <ul class="hotel-card-list">
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" alt="">
+                <img class="hotel-card-image" src="images/hotels/hotel-1.jpg" width="300" height="212" alt="Amara Resort & Spa">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
               <div class="hotel-card-description">
@@ -225,7 +225,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" alt="">
+                <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
               <div class="hotel-card-description">
@@ -243,7 +243,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" alt="">
+                <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
               <div class="hotel-card-description">
@@ -261,7 +261,7 @@
             </li>
             <li class="hotel-card">
               <a class="hotel-card-link" href="#">
-                <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" alt="">
+                <img class="hotel-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
               <div class="hotel-card-description">
@@ -317,7 +317,7 @@
       </main>
       <footer class="main-footer">
         <!-- Подвал сайта -->
-        <section class="footer-contacts">
+        <div class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <section class="footer-social">
             <h3 class="visually-hidden">Социальные сети</h3>
@@ -355,11 +355,11 @@
               </li>
             </ul>
           </section>
-          <section class="footer-phone">
+          <div class="footer-phone">
             <h3 class="visually-hidden">Номер телефона</h3>
             <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </section>
-          <section class="html-academy-logo">
+          </div>
+          <div class="html-academy-logo">
             <h3 class="visually-hidden">Логотип</h3>
             <a href="https://htmlacademy.ru/">
               <svg xmlns="http://www.w3.org/2000/svg" width="115" height="33" fill="none">
@@ -368,8 +368,8 @@
               </svg>
               <span class="visually-hidden">Сделано в HTML Academy</span>
             </a>
-          </section>
-        </section>
+          </div>
+        </div>
       </footer>
     </div>
 
