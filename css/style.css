@@ -430,8 +430,18 @@ p {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     gap: 20px;
+}
+
+.hotel-card-list::after {
+    content: "";
+    display: block;
+    width: 1060px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #e6e6e6;
 }
 
 .hotel-card {
