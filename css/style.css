@@ -310,9 +310,7 @@ p {
 /* hotels filter */
 
 .hotel-pick-wrapper {
-    padding-top: 50px;
-    width: 1060px;
-    margin: 0 auto;
+    padding: 35px 70px 70px
 }
 
 .hotels-pick {
@@ -339,13 +337,12 @@ p {
 /* filter */
 
 .hotels {
-    padding-top: 50px;
-    width: 1060px;
-    margin: 0 auto;
+    padding: 50px 70px 0;
+
 }
 
 .hotels-sort-wrapper {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     display: flex;
     align-items: center;
 }
@@ -432,9 +429,8 @@ p {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     gap: 20px;
 }
 
@@ -824,9 +820,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #756157;
-    padding-top: 35px;
-    padding-bottom: 70px;
-    margin: 0 auto;
 }
 
 .subscribe-index {
