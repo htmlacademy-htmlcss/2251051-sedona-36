@@ -33,12 +33,17 @@ html {
 
 .main-header {
     padding: 0 70px;
+    max-height: 64px;
+}
+
+.header-container {
+    display: flex;
 }
 
 .main-header-logo {
+    position: relative;
     margin-right: 28px;
     z-index: 1;
-    margin-bottom: -5px;
 }
 
 .navigation-list {
@@ -116,7 +121,7 @@ body {
 
 .subscribe-form-field input {
     box-sizing: border-box;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     font-size: 18px;
     line-height: 24px;
     margin: 0;
@@ -138,7 +143,7 @@ li {
 
 .navigation {
     display: flex;
-    align-items: center;
+    height: 64px;
 }
 
 /* index advantages */
@@ -210,7 +215,7 @@ p {
 .advantages-item-full {
     display: flex;
     width: 100%;
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     padding: 0;
     color: #ffffff;
 }
@@ -294,8 +299,10 @@ p {
 }
 
 .footer-social-item a {
-    margin: auto auto;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
     text-decoration: none;
     text-align: center;
 }
@@ -368,7 +375,7 @@ p {
     width: 48px;
     height: 48px;
     background: none;
-    border: #E5E5E5 solid 2px;
+    border: #e5e5e5 solid 2px;
     border-radius: 4px;
 }
 
@@ -436,7 +443,7 @@ p {
 
     box-sizing: border-box;
     padding: 20px;
-    border: 1px solid #E6E6E6;
+    border: 1px solid #e6e6e6;
     border-radius: 4px;
 }
 
@@ -523,7 +530,7 @@ p {
     line-height: 21px;
     width: 292px;
     height: 49px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     border-radius: 4px;
     padding-left: 20px;
     margin-left: auto;
@@ -540,7 +547,7 @@ p {
     color: #ffffff;
     width: 20px;
     height: 20px;
-    background-color: #7DB54F;
+    background-color: #7db54f;
     border-radius: 50%;
 }
 
@@ -582,7 +589,7 @@ p {
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 4px;
 }
@@ -606,7 +613,7 @@ p {
 .subscribe-button {
     padding: 0 50px;
     min-height: 52px;
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 700;
@@ -630,7 +637,7 @@ p {
     min-height: 36px;
     margin: 0;
     padding: 8px 20px;
-    background-color: #82B3D3;
+    background-color: #82b3d3;
 }
 
 .hotel-card-rating {
@@ -651,7 +658,7 @@ p {
 
 .apply-button {
     min-height: 36px;
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     padding: 8px 50px;
     margin-bottom: 33px;
 }
@@ -699,7 +706,7 @@ p {
 }
 
 .subscribe-main-description {
-    min-width: 475px;
+    max-width: 475px;
     margin-bottom: 54px;
 }
 
@@ -781,10 +788,13 @@ p {
 }
 
 .subscribe-hotels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff;
     padding-top: 96px;
     padding-bottom: 104px;
-    margin-bottom: 40px;
     text-align: center;
 }
 
