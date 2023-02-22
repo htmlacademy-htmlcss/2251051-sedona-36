@@ -450,14 +450,10 @@ p {
     margin-bottom: 16px;
 }
 
-
-
 .hotel-card-ratings {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-
 }
 
 .hotel-card-title {
