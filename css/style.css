@@ -342,7 +342,7 @@ p {
 }
 
 .hotels-sort-wrapper {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
 }
@@ -431,7 +431,9 @@ p {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 40px;
+    /* дивайдер прилипает к секции с маржином */
     gap: 20px;
+    position: relative;
 }
 
 .hotel-card-list::after {
@@ -439,9 +441,11 @@ p {
     display: block;
     width: 1060px;
     height: 1px;
-    margin: 0 auto;
-    margin-top: 20px;
     background: #e6e6e6;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hotel-card {
@@ -477,6 +481,7 @@ p {
 .pagination-list {
     margin: 0;
     padding: 0;
+    padding-top: 40px;
     display: flex;
 }
 
@@ -724,7 +729,7 @@ p {
 
 .advantages-wrapper-full h3,
 .advantages-wrapper h3 {
-    position: absolute;
+    position: relative;
     padding-bottom: 31px;
 }
 
