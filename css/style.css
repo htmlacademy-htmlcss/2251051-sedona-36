@@ -191,9 +191,9 @@ body {
 .advantages-list {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 385px 385px 385px;
 }
 
 /* --- advantages-item-full --- */
@@ -204,6 +204,7 @@ body {
     background-color: #82b3d3;
     padding: 0;
     color: #ffffff;
+    grid-column: 1/-1
 }
 
 .advantages-wrapper-full {
@@ -304,8 +305,9 @@ body {
 .services-list {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 385px;
 }
 
 .services-item:nth-child(odd) {
@@ -594,8 +596,8 @@ body {
 .hotel-card-list {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
     padding-bottom: 40px;
     /* дивайдер прилипает к секции с маржином */
     gap: 20px;
