@@ -932,3 +932,38 @@ body {
 }
 
 /* --- phone & footer logo --- */
+
+.footer-phone-item:hover {
+    color: #756157;
+  }
+
+  .footer-phone-item:focus {
+    color: #756157;
+    outline: none;
+  }
+
+  .footer-phone-item:active {
+    color: rgba(117, 97, 87, 0.3);
+  }
+
+  /* --- footer logo --- */
+
+  .html-academy-icon {
+    fill: #000000;
+  }
+
+  .html-academy-link:hover .html-academy-icon {
+    fill: #756157;
+  }
+
+  .html-academy-link:focus {
+    outline: none;
+  }
+
+  .html-academy-link:focus .html-academy-icon {
+    fill: #756157;
+  }
+
+  .html-academy-link:active .html-academy-icon {
+    fill: rgba(117, 97, 87, 0.3);
+  }
