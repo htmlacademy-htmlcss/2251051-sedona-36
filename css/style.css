@@ -773,16 +773,20 @@ body {
 }
 
 .navigation-user-favorites-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 4px;
     font-size: 10px;
     line-height: 10px;
     color: #ffffff;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #7db54f;
-    border-radius: 50%;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .hotel-card-more-button {
@@ -849,13 +853,14 @@ body {
     height: 2px;
 }
 
-.navigation-link:active {
+/* .navigation-link:active {
     color: #333333;
-}
+} */
 
 .navigation-link:focus {
     outline: none;
-    color: #333333;
+    /* color: #333333; */
+    color: red;
 }
 
 /* --- button-brown --- */
@@ -902,5 +907,6 @@ body {
 
 .navigation-link:active .navigation-icon,
 .navigation-link:focus .navigation-icon {
-    fill: #333333;
+    /* fill: #333333; */
+    fill: blue;
 }
