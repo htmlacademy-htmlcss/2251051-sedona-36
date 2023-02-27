@@ -857,11 +857,17 @@ body {
     color: #333333;
 } */
 
-.navigation-link:focus {
+/* .navigation-link:focus {
     outline: none;
-    /* color: #333333; */
+    color: #333333;
     color: red;
-}
+} */
+
+/* .navigation-link:active .navigation-icon,
+.navigation-link:focus .navigation-icon {
+    fill: #333333;
+    fill: blue;
+} */
 
 /* --- button-brown --- */
 
@@ -903,10 +909,26 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
+/* --- social icon --- */
 
-
-.navigation-link:active .navigation-icon,
-.navigation-link:focus .navigation-icon {
-    /* fill: #333333; */
-    fill: blue;
+.social-icon {
+    fill: #83b3d3;
 }
+
+.social-button:hover .social-icon {
+    fill: #68a2ca;
+}
+
+.social-button:focus {
+    outline: none;
+}
+
+.social-button:focus .social-icon {
+    fill: #68a2ca;
+}
+
+.social-button:active .social-icon {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+/* --- phone & footer logo --- */
