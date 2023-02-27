@@ -931,39 +931,80 @@ body {
     fill: rgba(104, 162, 202, 0.3);
 }
 
-/* --- phone & footer logo --- */
+/* --- phone --- */
 
 .footer-phone-item:hover {
     color: #756157;
-  }
+}
 
-  .footer-phone-item:focus {
+.footer-phone-item:focus {
     color: #756157;
     outline: none;
-  }
+}
 
-  .footer-phone-item:active {
+.footer-phone-item:active {
     color: rgba(117, 97, 87, 0.3);
-  }
+}
 
-  /* --- footer logo --- */
+/* --- footer logo --- */
 
-  .html-academy-icon {
+.html-academy-icon {
     fill: #000000;
-  }
+}
 
-  .html-academy-link:hover .html-academy-icon {
+.html-academy-link:hover .html-academy-icon {
     fill: #756157;
-  }
+}
 
-  .html-academy-link:focus {
+.html-academy-link:focus {
     outline: none;
-  }
+}
 
-  .html-academy-link:focus .html-academy-icon {
+.html-academy-link:focus .html-academy-icon {
     fill: #756157;
-  }
+}
 
-  .html-academy-link:active .html-academy-icon {
+.html-academy-link:active .html-academy-icon {
     fill: rgba(117, 97, 87, 0.3);
-  }
+}
+
+/* --- breadcrumbs --- */
+
+.breadcrumbs-icon {
+    fill: #ffffff;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.breadcrumbs-link:hover .breadcrumbs-icon,
+.breadcrumbs-link:focus .breadcrumbs-icon {
+    fill: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.breadcrumbs-link:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:active .breadcrumbs-icon {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+/* --- button view --- */
+
+.button-view:hover {
+    border-color: #000000;
+}
+
+.button-view:focus-visible {
+    border-color: #68a2ca;
+    outline: none;
+}
+
+.button-view:active {
+    border-color: #000000;
+}
