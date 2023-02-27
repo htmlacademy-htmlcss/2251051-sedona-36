@@ -869,6 +869,30 @@ body {
     fill: blue;
 } */
 
+/* --- button-green --- */
+
+.button-green {
+    width: 140px;
+    min-height: 36px;
+    margin: 0;
+    padding: 8px;
+    background-color: #7db54f;
+}
+
+.button-green:hover {
+    background-color: #6c9e42;
+}
+
+.button-green:focus {
+    outline: none;
+    background-color: #6c9e42;
+}
+
+.button-green:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #7db54f;
+}
+
 /* --- button-brown --- */
 
 .button-brown:hover {
@@ -1007,4 +1031,22 @@ body {
 
 .button-view:active {
     border-color: #000000;
+}
+
+/* --- select control --- */
+
+.select-control:hover {
+    border: 2px solid #68a2ca;
+    cursor: pointer;
+}
+
+.select-control:focus-visible {
+    border: 2px solid #68a2ca;
+    outline: auto;
+    cursor: pointer;
+}
+
+.select-control:active {
+    border: 2px solid #3f5e72;
+    outline: none;
 }
