@@ -842,8 +842,19 @@ body {
 
 /* --- display config --- */
 
+
 .navigation-link:hover::before,
 .navigation-link:focus-visible::before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    background-color: #756257;
+    height: 2px;
+}
+
+.navigation-link-current::before {
     content: "";
     position: absolute;
     right: 16px;
