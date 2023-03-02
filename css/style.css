@@ -881,12 +881,33 @@ body {
 } */
 
 
+/* --- reset button --- */
 
+.reset-button:hover {
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.reset-button:focus-visible {
+    outline: 3px solid #83b3d3;
+}
+
+.reset-button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- button disabled --- */
 
 .button-green:disabled,
 .button-brown:disabled,
 .button-blue:disabled {
     background-color: #E5E5E5;
+    cursor: default;
+}
+
+.reset-button:disabled {
+    color: rgba(255, 255, 255, 0.1);
+    cursor: default;
 }
 
 /* --- button-green --- */
