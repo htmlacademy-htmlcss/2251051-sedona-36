@@ -684,7 +684,7 @@ body {
     border-radius: 4px;
     width: 60px;
     height: 60px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .pagination-list {
@@ -729,7 +729,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .want-here-button {
@@ -760,7 +760,7 @@ body {
     line-height: 36px;
     border: none;
     border-radius: 0 4px 4px 0;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .buttons-view {
@@ -857,7 +857,28 @@ body {
 
 /* --- display config --- */
 
+.navigation-link::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    background-color: #756257;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+.navigation-link-current::before {
+    opacity: 1;
+}
+
 .navigation-link:hover::before,
+.navigation-link:focus::before {
+    opacity: 1;
+}
+
+/* .navigation-link:hover::before,
 .navigation-link:focus::before {
     content: "";
     position: absolute;
@@ -876,7 +897,10 @@ body {
     left: 16px;
     background-color: #756257;
     height: 2px;
-}
+} */
+
+
+
 
 /* .navigation-link:active {
     color: #333333;
@@ -900,7 +924,7 @@ body {
 .reset-button:hover {
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .reset-button:focus {
@@ -991,7 +1015,7 @@ body {
 
 .social-button:hover .social-icon {
     fill: #68a2ca;
-    transition: fill 0.3s;
+    transition: all 0.3s ease;
 }
 
 .social-button:focus .social-icon {
@@ -1007,7 +1031,7 @@ body {
 
 .footer-phone-item:hover {
     color: #756157;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .footer-phone-item:focus {
@@ -1027,7 +1051,7 @@ body {
 
 .html-academy-link:hover .html-academy-icon {
     fill: #756157;
-    transition: fill 0.3s;
+    transition: all 0.3s ease;
 }
 
 .html-academy-link:focus .html-academy-icon {
@@ -1049,7 +1073,7 @@ body {
 .breadcrumbs-link:focus {
     color: rgba(255, 255, 255, 0.6);
     outline: none;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
@@ -1072,7 +1096,7 @@ body {
 .button-view:hover {
     border-color: #000000;
     cursor: pointer;
-    transition: border-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .button-view:focus {
@@ -1089,7 +1113,7 @@ body {
 .select-control:hover {
     border: 2px solid #68a2ca;
     cursor: pointer;
-    transition: border 0.3s;
+    transition: all 0.3s ease;
 }
 
 .select-control:focus {
