@@ -589,6 +589,11 @@ body {
     margin-left: auto;
     margin-right: 70px;
     appearance: none;
+    /*--- arrow ---*/
+    -webkit-appearance: none;
+    appearance: none;
+    background: url("../images/navigation/select-control.svg") no-repeat right;
+    background-position-x: calc(100% - 20px);
 }
 
 /* --- hotel-card-list --- */
@@ -844,7 +849,7 @@ body {
 
 
 .navigation-link:hover::before,
-.navigation-link:focus-visible::before {
+.navigation-link:focus::before {
     content: "";
     position: absolute;
     right: 16px;
@@ -888,7 +893,7 @@ body {
     cursor: pointer;
 }
 
-.reset-button:focus-visible {
+.reset-button:focus {
     outline: 3px solid #83b3d3;
 }
 
@@ -942,11 +947,8 @@ body {
 }
 
 .button-brown:focus {
-    outline: none;
-}
-
-.button-brown:focus-visible {
     background-color: #615048;
+    outline: none;
 }
 
 .button-brown:active {
@@ -962,11 +964,8 @@ body {
 }
 
 .button-blue:focus {
-    outline: none;
-}
-
-.button-blue:focus-visible {
     background-color: #68A2CA;
+    outline: none;
 }
 
 .button-blue:active {
@@ -1065,7 +1064,7 @@ body {
     border-color: #000000;
 }
 
-.button-view:focus-visible {
+.button-view:focus {
     border-color: #68a2ca;
     outline: none;
 }
@@ -1081,7 +1080,7 @@ body {
     cursor: pointer;
 }
 
-.select-control:focus-visible {
+.select-control:focus {
     border: 2px solid #68a2ca;
     outline: auto;
     cursor: pointer;
