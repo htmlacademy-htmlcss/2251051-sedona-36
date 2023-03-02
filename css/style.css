@@ -693,14 +693,22 @@ body {
     display: flex;
 }
 
-.pagination-current {
-    color: #000000;
-    background-color: #f2f2f2;
+.pagination-button:focus {
+    background-color: #82b3d3;
 }
 
-.pagination-disabled {
+.pagination-current,
+.pagination-current:focus {
+    color: #000000;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.pagination-disabled,
+.pagination-disabled:focus {
     color: #000000;
     background: none;
+    cursor: pointer;
 }
 
 .pagination-item:not(:last-child) {
