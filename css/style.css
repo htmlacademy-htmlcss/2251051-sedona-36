@@ -880,6 +880,15 @@ body {
     fill: blue;
 } */
 
+
+
+
+.button-green:disabled,
+.button-brown:disabled,
+.button-blue:disabled {
+    background-color: #E5E5E5;
+}
+
 /* --- button-green --- */
 
 .button-green {
