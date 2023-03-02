@@ -684,6 +684,7 @@ body {
     border-radius: 4px;
     width: 60px;
     height: 60px;
+    transition: background-color 0.3s;
 }
 
 .pagination-list {
@@ -728,6 +729,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
 .want-here-button {
@@ -758,6 +760,7 @@ body {
     line-height: 36px;
     border: none;
     border-radius: 0 4px 4px 0;
+    transition: background-color 0.3s;
 }
 
 .buttons-view {
@@ -854,7 +857,6 @@ body {
 
 /* --- display config --- */
 
-
 .navigation-link:hover::before,
 .navigation-link:focus::before {
     content: "";
@@ -898,6 +900,7 @@ body {
 .reset-button:hover {
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
+    transition: color 0.3s;
 }
 
 .reset-button:focus {
@@ -988,14 +991,12 @@ body {
 
 .social-button:hover .social-icon {
     fill: #68a2ca;
-}
-
-.social-button:focus {
-    outline: none;
+    transition: fill 0.3s;
 }
 
 .social-button:focus .social-icon {
     fill: #68a2ca;
+    outline: none;
 }
 
 .social-button:active .social-icon {
@@ -1006,6 +1007,7 @@ body {
 
 .footer-phone-item:hover {
     color: #756157;
+    transition: color 0.3s;
 }
 
 .footer-phone-item:focus {
@@ -1025,14 +1027,12 @@ body {
 
 .html-academy-link:hover .html-academy-icon {
     fill: #756157;
-}
-
-.html-academy-link:focus {
-    outline: none;
+    transition: fill 0.3s;
 }
 
 .html-academy-link:focus .html-academy-icon {
     fill: #756157;
+    outline: none;
 }
 
 .html-academy-link:active .html-academy-icon {
@@ -1049,6 +1049,8 @@ body {
 .breadcrumbs-link:focus {
     color: rgba(255, 255, 255, 0.6);
     outline: none;
+    transition: color 0.3s;
+    cursor: pointer;
 }
 
 .breadcrumbs-link:hover .breadcrumbs-icon,
@@ -1070,6 +1072,7 @@ body {
 .button-view:hover {
     border-color: #000000;
     cursor: pointer;
+    transition: border-color 0.3s;
 }
 
 .button-view:focus {
@@ -1086,6 +1089,7 @@ body {
 .select-control:hover {
     border: 2px solid #68a2ca;
     cursor: pointer;
+    transition: border 0.3s;
 }
 
 .select-control:focus {
