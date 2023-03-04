@@ -705,13 +705,6 @@ body {
     cursor: pointer;
 }
 
-.pagination-disabled,
-.pagination-disabled:focus {
-    color: #000000;
-    background: none;
-    cursor: pointer;
-}
-
 .pagination-item:not(:last-child) {
     margin-right: 8px;
 }
@@ -935,20 +928,6 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-/* --- button disabled --- */
-
-.button-green:disabled,
-.button-brown:disabled,
-.button-blue:disabled {
-    background-color: #E5E5E5;
-    cursor: default;
-}
-
-.reset-button:disabled {
-    color: rgba(255, 255, 255, 0.1);
-    cursor: default;
-}
-
 /* --- button-green --- */
 
 .button-green {
@@ -1125,4 +1104,25 @@ body {
 .select-control:active {
     border: 2px solid #3f5e72;
     outline: none;
+}
+
+/* --- button disabled --- */
+
+.button-green:disabled,
+.button-brown:disabled,
+.button-blue:disabled {
+    background-color: #E5E5E5;
+    cursor: default;
+}
+
+.reset-button:disabled {
+    color: rgba(255, 255, 255, 0.1);
+    cursor: default;
+}
+
+.pagination-disabled,
+.pagination-disabled:focus {
+    color: #000000;
+    background: none;
+    cursor: default;
 }
