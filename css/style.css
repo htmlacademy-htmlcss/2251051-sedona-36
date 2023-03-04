@@ -588,7 +588,11 @@ body {
     padding-left: 20px;
     margin-left: auto;
     margin-right: 70px;
+    /*--- arrow ---*/
+    -webkit-appearance: none;
     appearance: none;
+    background: url("../images/navigation/select-control.svg") no-repeat right;
+    background-position-x: calc(100% - 20px);
 }
 
 /* --- hotel-card-list --- */
@@ -680,6 +684,7 @@ body {
     border-radius: 4px;
     width: 60px;
     height: 60px;
+    transition: all 0.3s ease;
 }
 
 .pagination-list {
@@ -689,14 +694,15 @@ body {
     display: flex;
 }
 
-.pagination-current {
-    color: #000000;
-    background-color: #f2f2f2;
+.pagination-button:focus {
+    background-color: #82b3d3;
 }
 
-.pagination-disabled {
+.pagination-current,
+.pagination-current:focus {
     color: #000000;
-    background: none;
+    background-color: #f2f2f2;
+    cursor: pointer;
 }
 
 .pagination-item:not(:last-child) {
@@ -716,6 +722,7 @@ body {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .want-here-button {
@@ -746,6 +753,7 @@ body {
     line-height: 36px;
     border: none;
     border-radius: 0 4px 4px 0;
+    transition: all 0.3s ease;
 }
 
 .buttons-view {
@@ -773,16 +781,20 @@ body {
 }
 
 .navigation-user-favorites-number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-left: 4px;
     font-size: 10px;
     line-height: 10px;
     color: #ffffff;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-color: #7db54f;
-    border-radius: 50%;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .hotel-card-more-button {
@@ -838,8 +850,29 @@ body {
 
 /* --- display config --- */
 
+.navigation-link::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    background-color: #756257;
+    height: 2px;
+    transition: all 0.3s ease;
+}
+
+.navigation-link-current::before {
+    opacity: 1;
+}
+
 .navigation-link:hover::before,
-.navigation-link:focus-visible::before {
+.navigation-link:focus::before {
+    opacity: 1;
+}
+
+/* .navigation-link:hover::before,
+.navigation-link:focus::before {
     content: "";
     position: absolute;
     right: 16px;
@@ -849,13 +882,74 @@ body {
     height: 2px;
 }
 
-.navigation-link:active {
-    color: #333333;
-}
+.navigation-link-current::before {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    background-color: #756257;
+    height: 2px;
+} */
 
-.navigation-link:focus {
+
+
+
+/* .navigation-link:active {
+    color: #333333;
+} */
+
+/* .navigation-link:focus {
     outline: none;
     color: #333333;
+    color: red;
+} */
+
+/* .navigation-link:active .navigation-icon,
+.navigation-link:focus .navigation-icon {
+    fill: #333333;
+    fill: blue;
+} */
+
+
+/* --- reset button --- */
+
+.reset-button:hover {
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reset-button:focus {
+    outline: 3px solid #83b3d3;
+}
+
+.reset-button:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- button-green --- */
+
+.button-green {
+    width: 140px;
+    min-height: 36px;
+    margin: 0;
+    padding: 8px;
+    background-color: #7db54f;
+}
+
+.button-green:hover {
+    background-color: #6c9e42;
+}
+
+.button-green:focus {
+    outline: none;
+    background-color: #6c9e42;
+}
+
+.button-green:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #7db54f;
 }
 
 /* --- button-brown --- */
@@ -866,11 +960,8 @@ body {
 }
 
 .button-brown:focus {
-    outline: none;
-}
-
-.button-brown:focus-visible {
     background-color: #615048;
+    outline: none;
 }
 
 .button-brown:active {
@@ -886,11 +977,8 @@ body {
 }
 
 .button-blue:focus {
-    outline: none;
-}
-
-.button-blue:focus-visible {
     background-color: #68A2CA;
+    outline: none;
 }
 
 .button-blue:active {
@@ -898,9 +986,143 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
+/* --- social icon --- */
 
+.social-icon {
+    fill: #83b3d3;
+}
 
-.navigation-link:active .navigation-icon,
-.navigation-link:focus .navigation-icon {
-    fill: #333333;
+.social-button:hover .social-icon {
+    fill: #68a2ca;
+    transition: all 0.3s ease;
+}
+
+.social-button:focus .social-icon {
+    fill: #68a2ca;
+    outline: none;
+}
+
+.social-button:active .social-icon {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
+/* --- phone --- */
+
+.footer-phone-item:hover {
+    color: #756157;
+    transition: all 0.3s ease;
+}
+
+.footer-phone-item:focus {
+    color: #756157;
+    outline: none;
+}
+
+.footer-phone-item:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+/* --- footer logo --- */
+
+.html-academy-icon {
+    fill: #000000;
+}
+
+.html-academy-link:hover .html-academy-icon {
+    fill: #756157;
+    transition: all 0.3s ease;
+}
+
+.html-academy-link:focus .html-academy-icon {
+    fill: #756157;
+    outline: none;
+}
+
+.html-academy-link:active .html-academy-icon {
+    fill: rgba(117, 97, 87, 0.3);
+}
+
+/* --- breadcrumbs --- */
+
+.breadcrumbs-icon {
+    fill: #ffffff;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:focus {
+    color: rgba(255, 255, 255, 0.6);
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.breadcrumbs-link:hover .breadcrumbs-icon,
+.breadcrumbs-link:focus .breadcrumbs-icon {
+    fill: rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.breadcrumbs-link:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:active .breadcrumbs-icon {
+    fill: rgba(255, 255, 255, 0.3);
+}
+
+/* --- button view --- */
+
+.button-view:hover {
+    border-color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-view:focus {
+    border-color: #68a2ca;
+    outline: none;
+}
+
+.button-view:active {
+    border-color: #000000;
+}
+
+/* --- select control --- */
+
+.select-control:hover {
+    border: 2px solid #68a2ca;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.select-control:focus {
+    border: 2px solid #68a2ca;
+    outline: auto;
+    cursor: pointer;
+}
+
+.select-control:active {
+    border: 2px solid #3f5e72;
+    outline: none;
+}
+
+/* --- button disabled --- */
+
+.button-green:disabled,
+.button-brown:disabled,
+.button-blue:disabled {
+    background-color: #E5E5E5;
+    cursor: default;
+}
+
+.reset-button:disabled {
+    color: rgba(255, 255, 255, 0.1);
+    cursor: default;
+}
+
+.pagination-disabled,
+.pagination-disabled:focus {
+    color: #000000;
+    background: none;
+    cursor: default;
 }
