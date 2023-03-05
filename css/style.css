@@ -1332,6 +1332,14 @@ body {
     transform: scale(1.1);
 }
 
+.range-toggle:focus {
+    outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+    outline: 2px solid #83b3d3;
+}
+
 /* --- modal --- */
 
 .modal-container {
@@ -1504,13 +1512,13 @@ body {
     margin-left: 8px;
 }
 
-.tooltip-toogle {
+/* .tooltip-toogle {
     display: block;
     margin: 0;
     padding: 0;
     background-color: transparent;
     border: none;
-}
+} */
 
 .tooltip-text {
     position: absolute;
@@ -1545,7 +1553,7 @@ body {
     content: "";
 }
 
-.tooltip-toogle:focus {
+/* .tooltip-toogle:focus {
     outline: none;
 }
 
@@ -1556,7 +1564,7 @@ body {
 .tooltip-toogle:hover + .tooltip-text,
 .tooltip-toogle:focus + .tooltip-text {
     display: block;
-}
+} */
 
 .search-form-counter {
     width: 31px;
