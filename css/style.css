@@ -1374,9 +1374,9 @@ body {
     min-height: 448px;
 }
 
-.modal-close {
+/* .modal-close {
     display: none;
-}
+} */
 
 /* убирает отображение */
 
@@ -1512,13 +1512,13 @@ body {
     margin-left: 8px;
 }
 
-/* .tooltip-toogle {
+.tooltip-toggle {
     display: block;
     margin: 0;
     padding: 0;
     background-color: transparent;
     border: none;
-} */
+}
 
 .tooltip-text {
     position: absolute;
@@ -1553,18 +1553,18 @@ body {
     content: "";
 }
 
-/* .tooltip-toogle:focus {
+.tooltip-toggle:focus {
     outline: none;
 }
 
-.tooltip-toogle:hover {
+.tooltip-toggle:hover {
     cursor: pointer;
 }
 
-.tooltip-toogle:hover + .tooltip-text,
-.tooltip-toogle:focus + .tooltip-text {
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
     display: block;
-} */
+}
 
 .search-form-counter {
     width: 31px;
