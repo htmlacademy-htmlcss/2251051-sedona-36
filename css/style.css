@@ -157,7 +157,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 69px 0;
+    padding: 69px 0 89px;
 }
 
 .advantages-main-title,
@@ -1196,4 +1196,320 @@ body {
 
 .range-toggle:hover {
     transform: scale(1.1);
+}
+
+/* --- modal --- */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+    position: relative;
+    max-height: 80vh;
+    margin: auto;
+    padding: 64px 70px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    /* overflow-y: auto; */
+    /*Добавляет прокрутку по оси y при переполнении*/
+}
+
+.modal input {
+    font-family: "PT Sans", sans-serif;
+}
+
+.modal-search {
+    max-width: 717px;
+    min-height: 448px;
+}
+
+/* .modal-close {
+    display: none;
+  } */
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 46px;
+}
+
+.modal-button {
+    position: absolute;
+    top: 64px;
+    right: 52px;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal-button:hover {
+    background-color: #e6e6e6;
+}
+
+.modal-button:focus-visible {
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
+}
+
+.modal-button::before,
+.modal-button::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 18px;
+    height: 2px;
+    background-color: #000000;
+    content: "";
+}
+
+.modal-button::before {
+    transform: translateX(-9px) translateY(-1px) rotate(45deg);
+}
+
+.modal-button::after {
+    transform: translateX(-9px) translateY(-1px) rotate(-45deg);
+}
+
+.modal-button:active::before,
+.modal-button:active::after {
+    background-color: rgba(117, 97, 87, 0.3);
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 64px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.field-group {
+    margin-bottom: 24px;
+}
+
+.field-group-container {
+    display: flex;
+}
+
+.input-status {
+    display: inline-block;
+    margin-left: 157px;
+    padding-top: 4px;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.input-status-error {
+    color: #ff5757;
+}
+
+.search-form-label {
+    width: 137px;
+    align-self: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.form-label-icon {
+    width: 130px;
+}
+
+.search-form-field {
+    width: 440px;
+    height: 48px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    background-image: url("../images/modal/date.svg");
+    background-position-x: calc(100% - 20px);
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+}
+
+.counter-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.counter-form-name {
+    display: inline;
+}
+
+.tooltip {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    margin-top: -1px;
+    margin-left: 8px;
+}
+
+.tooltip-toogle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.tooltip-text {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    display: none;
+    width: 256px;
+    min-height: 143px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 15px;
+    padding: 20px 18px 18px 22px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ffffff;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip-text::before {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%);
+    width: 19px;
+    height: 9px;
+    background-image: url("../images/tooltip-arrow.svg");
+    content: "";
+}
+
+.tooltip-toogle:focus {
+    outline: none;
+}
+
+.tooltip-toogle:hover {
+    cursor: pointer;
+}
+
+.tooltip-toogle:hover + .tooltip-text,
+.tooltip-toogle:focus + .tooltip-text {
+    display: block;
+}
+
+.search-form-counter {
+    width: 31px;
+    height: 48px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.counter:focus {
+    outline: 3px solid #82b3d3;
+}
+
+.button-minus {
+    margin-right: -5px;
+    background-image: url("../images/modal/minus-grey.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+}
+
+.button-plus {
+    margin-left: -5px;
+    background-image: url("../images/modal/plus-grey.svg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.button-plus::after {
+    transform: translateX(-7px) rotate(90deg);
+}
+
+.button-minus,
+.button-plus {
+    position: relative;
+    width: 40px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.counter::-webkit-outer-spin-button,
+/* убирает стрелочки у input:number (в Firefox не работает)*/
+.counter::-webkit-inner-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.button-minus:hover {
+    background-image: url("../images/modal/minus.svg");
+}
+
+.button-plus:hover {
+    background-image: url("../images/modal/plus.svg");
+}
+
+.button-minus:active {
+    background-image: url("../images/modal/minus-grey.svg");
+}
+
+.button-plus:active {
+    background-image: url("../images/modal/plus-grey.svg");
+}
+
+.button-minus:focus-visible,
+.button-plus:focus-visible {
+    outline: 3px solid #82b3d3;
+}
+
+.counter-group-container {
+    margin: 0;
+    padding: 0;
+}
+
+.search-form-button {
+    width: 100%;
+    min-height: 60px;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #83b3d3;
+    border-radius: 10px;
 }

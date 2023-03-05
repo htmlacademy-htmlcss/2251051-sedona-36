@@ -9,7 +9,6 @@
   </head>
 
   <body>
-
     <div class="page-wrapper">
       <!-- Шапка сайта, навигация -->
       <header class="main-header">
@@ -74,10 +73,6 @@
             <p class="advantages-main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
             <p class="advantages-main-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </div>
-
-
-
-
           <ul class="advantages-list">
             <li class="advantages-item-full">
               <div class="advantages-wrapper-full">
@@ -190,7 +185,7 @@
                   <svg class="social-icon" width="24" height="14" viewBox="0 0 25 15" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184 4.78245 16.3274 6.85845C15.7154 7.46045 15.4374 7.65145 15.1034 7.65145C14.9364 7.65145 14.6854 7.46045 14.6854 6.91345V1.80445C14.6854 1.14845 14.5014 0.856445 13.9454 0.856445H9.81738C9.40038 0.856445 9.14938 1.16045 9.14938 1.44945C9.14938 2.07045 10.0954 2.21445 10.1924 3.96245V7.76045C10.1924 8.59345 10.0394 8.74444 9.70538 8.74444C8.81538 8.74444 6.65038 5.53345 5.36538 1.85945C5.11638 1.14445 4.86438 0.856445 4.19338 0.856445H1.56638C0.816382 0.856445 0.666382 1.20345 0.666382 1.58645C0.666382 2.26845 1.55638 5.65645 4.81138 10.1374C6.98138 13.1974 10.0364 14.8564 12.8194 14.8564C14.4884 14.8564 14.6944 14.4884 14.6944 13.8534V11.5404C14.6944 10.8034 14.8524 10.6564 15.3814 10.6564C15.7714 10.6564 16.4384 10.8484 17.9964 12.3234C19.7764 14.0724 20.0694 14.8564 21.0714 14.8564H23.6964C24.4464 14.8564 24.8224 14.4884 24.6064 13.7604C24.3684 13.0364 23.5184 11.9854 22.3914 10.7384C21.7794 10.0284 20.8614 9.26345 20.5824 8.88045C20.1934 8.38945 20.3044 8.17045 20.5824 7.73345C20.5824 7.73345 23.7824 3.30745 24.1154 1.80445H24.1164Z"/>
+                      d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184 4.78245 16.3274 6.85845C15.7154 7.46045 15.4374 7.65145 15.1034 7.65145C14.9364 7.65145 14.6854 7.46045 14.6854 6.91345V1.80445C14.6854 1.14845 14.5014 0.856445 13.9454 0.856445H9.81738C9.40038 0.856445 9.14938 1.16045 9.14938 1.44945C9.14938 2.07045 10.0954 2.21445 10.1924 3.96245V7.76045C10.1924 8.59345 10.0394 8.74444 9.70538 8.74444C8.81538 8.74444 6.65038 5.53345 5.36538 1.85945C5.11638 1.14445 4.86438 0.856445 4.19338 0.856445H1.56638C0.816382 0.856445 0.666382 1.20345 0.666382 1.58645C0.666382 2.26845 1.55638 5.65645 4.81138 10.1374C6.98138 13.1974 10.0364 14.8564 12.8194 14.8564C14.4884 14.8564 14.6944 14.4884 14.6944 13.8534V11.5404C14.6944 10.8034 14.8524 10.6564 15.3814 10.6564C15.7714 10.6564 16.4384 10.8484 17.9964 12.3234C19.7764 14.0724 20.0694 14.8564 21.0714 14.8564H23.6964C24.4464 14.8564 24.8224 14.4884 24.6064 13.7604C24.3684 13.0364 23.5184 11.9854 22.3914 10.7384C21.7794 10.0284 20.8614 9.26345 20.5824 8.88045C20.1934 8.38945 20.3044 8.17045 20.5824 7.73345C20.5824 7.73345 23.7824 3.30745 24.1154 1.80445H24.1164Z" />
                   </svg>
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
@@ -235,7 +230,73 @@
         </section>
       </footer>
     </div>
-
+    <div class="modal-container modal-close">
+      <div class="modal modal-search">
+        <button class="modal-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <div class="field-group-container">
+                <label class="search-form-label" for="search-check-in">Дата Заезда:</label>
+                <input type="text" class="search-form-field field" id="search-check-in" name="search-check-in"
+                  placeholder="Укажите дату" value="27 апреля 2020" required>
+              </div>
+              <span class="input-status input-status-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="field-group">
+              <div class="field-group-container">
+                <label class="search-form-label" for="search-check-out">Дата Выезда:</label>
+                <input class="search-form-field field" type="text" id="search-check-out" name="search-check-out"
+                  placeholder="Укажите дату" value="1 сентября 2023" required>
+              </div>
+              <span class="input-status">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="input-container">
+              <div class="counter-group">
+                <label class="search-form-label" for="adults">Взрослые:</label>
+                <div class="counter-group-container">
+                  <button class="search-form-counter button-minus" type="button" aria-label="Минус"></button>
+                  <div class="counter-form-name">
+                    <label for="adults" class="visually-hidden">Количество</label>
+                    <input class="search-form-counter counter" type="number" name="adults" id="adults" value="2"
+                      required>
+                  </div>
+                  <button class="search-form-counter button-plus" type="button" aria-label="Плюс"></button>
+                </div>
+              </div>
+              <div class="counter-group">
+                <span class="search-form-label form-label-icon">
+                  <label class="search-form-label" for="childs">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toogle" aria-labelledby="tooltip-label-date" type="button">
+                      <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+                </span>
+                <div class="counter-group-container">
+                  <button class="search-form-counter button-minus" type="button" aria-label="Минус"></button>
+                  <div class="counter-form-name">
+                    <label for="adults" class="visually-hidden">Количество</label>
+                    <input class="search-form-counter counter" type="number" name="childs" id="childs" value="2">
+                  </div>
+                  <button class="search-form-counter button-plus" type="button" aria-label="Плюс"></button>
+                </div>
+              </div>
+            </div>
+            <button class="search-form-button button button-blue" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
   </body>
 
 </html>
