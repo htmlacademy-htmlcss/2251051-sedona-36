@@ -429,8 +429,7 @@ body {
 
 .footer-social-item {
     display: flex;
-    width: 65px;
-    /* height: 65px; */
+    width: 47px;
     align-items: stretch;
     justify-content: center;
 }
@@ -538,7 +537,7 @@ body {
 
 .hotels-filter-group:nth-child(2) {
     width: 152px;
-    margin-right: 100px;
+    margin-right: 135px;
 }
 
 .hotels-filter-group:nth-child(3) {
@@ -558,7 +557,63 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
+    position: relative;
+    display: block;
+    padding-left: 36px;
 }
+
+/* radio button and box style */
+
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/navigation/check.svg");
+    background-position: 50% 50%;
+}
+
+.hotels-filter-group:nth-of-type(2) .control-mark {
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3f5e72;
+    border-radius: 50%;
+    content: "";
+}
+
+.control-input[type="text"]:hover {
+    background-color: #e6e6e6;
+    outline: 2px solid #68a2ca;
+}
+
+.control-input[type="text"]:focus {
+    background-color: #e6e6e6;
+    outline: 3px solid #000000;
+}
+
+
+
+
+
+
+
 
 /* --- section hotels --- */
 
@@ -945,6 +1000,7 @@ body {
 
 .button-green:hover {
     background-color: #6c9e42;
+    cursor: pointer;
 }
 
 .button-green:focus {
@@ -1112,6 +1168,26 @@ body {
     outline: none;
 }
 
+/* display control */
+
+.control:hover .control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+
+}
+
+.control:focus-within .control-mark {
+    outline: 3px solid #83b3d3;
+}
+
+.control:active .control-mark {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:hover .control-label {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 /* --- button disabled --- */
 
 .button-green:disabled,
@@ -1229,7 +1305,7 @@ body {
     position: absolute;
     height: 4px;
     background-color: #ffffff;
-    width: 70%;
+    width: 76%;
 }
 
 .toggle-min {
@@ -1292,8 +1368,9 @@ body {
 
 .modal-close {
     display: none;
-  }
-  /* убрать отображение */
+}
+
+/* убирает отображение */
 
 .input-container {
     display: flex;
