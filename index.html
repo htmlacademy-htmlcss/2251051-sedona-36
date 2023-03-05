@@ -258,20 +258,24 @@
               <div class="counter-group">
                 <label class="search-form-label" for="adults">Взрослые:</label>
                 <div class="counter-group-container">
-                  <button class="search-form-counter button-minus" type="button" aria-label="Минус"></button>
+                  <button class="search-form-counter button-minus" type="button">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
                   <div class="counter-form-name">
                     <label for="adults" class="visually-hidden">Количество</label>
                     <input class="search-form-counter counter" type="number" name="adults" id="adults" value="2"
                       required>
                   </div>
-                  <button class="search-form-counter button-plus" type="button" aria-label="Плюс"></button>
+                  <button class="search-form-counter button-plus" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
                 </div>
               </div>
               <div class="counter-group">
                 <span class="search-form-label form-label-icon">
                   <label class="search-form-label" for="childs">Дети:</label>
                   <span class="tooltip">
-                    <button class="tooltip-toggle" aria-labelledby="tooltip-label-date" type="button">
+                    <button class="tooltip-toggle" type="button">
                       <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="currentColor"
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="13" cy="13" r="13" fill="#83B3D3" />
@@ -283,12 +287,16 @@
                   </span>
                 </span>
                 <div class="counter-group-container">
-                  <button class="search-form-counter button-minus" type="button" aria-label="Минус"></button>
+                  <button class="search-form-counter button-minus" type="button">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
                   <div class="counter-form-name">
                     <label for="adults" class="visually-hidden">Количество</label>
                     <input class="search-form-counter counter" type="number" name="childs" id="childs" value="2">
                   </div>
-                  <button class="search-form-counter button-plus" type="button" aria-label="Плюс"></button>
+                  <button class="search-form-counter button-plus" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
                 </div>
               </div>
             </div>
