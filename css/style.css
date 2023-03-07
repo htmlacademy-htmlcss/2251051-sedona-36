@@ -774,6 +774,7 @@ body {
 
 .pagination-button:focus {
     background-color: #82b3d3;
+    border: 1px solid #82b3d3;
 }
 
 .pagination-current,
@@ -781,6 +782,8 @@ body {
     color: #000000;
     background-color: #f2f2f2;
     cursor: pointer;
+    outline: none;
+    border: 0;
 }
 
 .pagination-item:not(:last-child) {
