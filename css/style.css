@@ -1375,7 +1375,7 @@ body {
     background-color: #e6e6e6;
 }
 
-.modal-button:focus-visible {
+.modal-button:focus {
     background-color: #e6e6e6;
     outline: 3px solid #83b3d3;
 }
@@ -1427,7 +1427,6 @@ body {
     margin-left: 157px;
     padding-top: 4px;
     font-size: 16px;
-    line-height: 21px;
     font-weight: 400;
 }
 
