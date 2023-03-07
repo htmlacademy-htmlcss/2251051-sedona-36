@@ -599,8 +599,6 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark {
     display: block;
-    width: 20px;
-    height: 20px;
     background-image: url("../images/navigation/check.svg");
     background-position: 50% 50%;
 }
@@ -623,12 +621,12 @@ body {
 
 .control-input[type="text"]:hover {
     background-color: #e6e6e6;
-    outline: 2px solid #68a2ca;
+    outline: 3px solid #000000;
 }
 
 .control-input[type="text"]:focus {
     background-color: #e6e6e6;
-    outline: 3px solid #000000;
+    outline: 3px solid #68a2ca;
 }
 
 /* --- section hotels --- */
@@ -768,8 +766,13 @@ body {
     display: flex;
 }
 
+.pagination-button:not(.pagination-current, .pagination-disabled):hover {
+    border: 1px solid #82b3d3;
+}
+
 .pagination-button:focus {
     background-color: #82b3d3;
+    border: 1px solid #82b3d3;
 }
 
 .pagination-current,
@@ -777,6 +780,8 @@ body {
     color: #000000;
     background-color: #f2f2f2;
     cursor: pointer;
+    outline: none;
+    border: 0;
 }
 
 .pagination-item:not(:last-child) {
@@ -1151,8 +1156,10 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:hover .control-label {
+.control-label:hover,
+.control-label:active {
     color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
 }
 
 /* --- button disabled --- */
@@ -1247,6 +1254,7 @@ body {
     height: 48px;
     box-sizing: border-box;
     padding-left: 20px;
+    padding-right: 45px;
     background-color: #f2f2f2;
     border: none;
 }
@@ -1310,6 +1318,9 @@ body {
 /* --- modal --- */
 
 .modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -1323,7 +1334,6 @@ body {
 .modal {
     position: relative;
     max-height: 576px;
-    margin: auto;
     padding: 64px 70px;
     background-color: #ffffff;
     border-radius: 30px;
@@ -1340,10 +1350,9 @@ body {
     min-height: 448px;
 }
 
-/* .modal-close {
+.modal-close {
     display: none;
-} */
-/* убирает отображение modal */
+}
 
 .input-container {
     display: flex;
@@ -1369,7 +1378,7 @@ body {
     background-color: #e6e6e6;
 }
 
-.modal-button:focus-visible {
+.modal-button:focus {
     background-color: #e6e6e6;
     outline: 3px solid #83b3d3;
 }
@@ -1421,7 +1430,6 @@ body {
     margin-left: 157px;
     padding-top: 4px;
     font-size: 16px;
-    line-height: 21px;
     font-weight: 400;
 }
 
@@ -1446,6 +1454,7 @@ body {
     height: 48px;
     box-sizing: border-box;
     padding-left: 20px;
+    padding-right: 55px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
@@ -1514,7 +1523,7 @@ body {
     transform: translateX(-50%);
     width: 19px;
     height: 9px;
-    background-image: url("../images/tooltip-arrow.svg");
+    background-image: url("../images/vector-elements/tooltip-arrow.svg");
     content: "";
 }
 
@@ -1546,6 +1555,8 @@ body {
 }
 
 .counter:focus {
+    position: relative;
+    z-index: 1;
     outline: 3px solid #82b3d3;
 }
 
@@ -1603,8 +1614,8 @@ body {
     background-image: url("../images/modal/plus-grey.svg");
 }
 
-.button-minus:focus-visible,
-.button-plus:focus-visible {
+.button-minus:focus,
+.button-plus:focus {
     outline: 3px solid #82b3d3;
 }
 
