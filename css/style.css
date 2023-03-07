@@ -768,6 +768,10 @@ body {
     display: flex;
 }
 
+.pagination-button:not(.pagination-current, .pagination-disabled):hover {
+    border: 1px solid #82b3d3;
+}
+
 .pagination-button:focus {
     background-color: #82b3d3;
 }
@@ -1343,8 +1347,6 @@ body {
 .modal-close {
     display: none;
 }
-
-/* убирает отображение modal */
 
 .input-container {
     display: flex;
