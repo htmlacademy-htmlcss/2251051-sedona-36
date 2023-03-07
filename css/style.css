@@ -1317,6 +1317,9 @@ body {
 /* --- modal --- */
 
 .modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -1330,7 +1333,6 @@ body {
 .modal {
     position: relative;
     max-height: 576px;
-    margin: auto;
     padding: 64px 70px;
     background-color: #ffffff;
     border-radius: 30px;
