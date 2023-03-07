@@ -1254,6 +1254,7 @@ body {
     height: 48px;
     box-sizing: border-box;
     padding-left: 20px;
+    padding-right: 45px;
     background-color: #f2f2f2;
     border: none;
 }
@@ -1453,6 +1454,7 @@ body {
     height: 48px;
     box-sizing: border-box;
     padding-left: 20px;
+    padding-right: 55px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
