@@ -1159,6 +1159,7 @@ body {
 .control-label:hover,
 .control-label:active {
     color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
 }
 
 /* --- button disabled --- */
