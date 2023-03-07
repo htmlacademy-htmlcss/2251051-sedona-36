@@ -599,8 +599,6 @@ body {
 
 .control-input[type="checkbox"]:checked + .control-mark {
     display: block;
-    width: 20px;
-    height: 20px;
     background-image: url("../images/navigation/check.svg");
     background-position: 50% 50%;
 }
@@ -1158,7 +1156,8 @@ body {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:hover .control-label {
+.control-label:hover,
+.control-label:active {
     color: rgba(255, 255, 255, 0.6);
 }
 
