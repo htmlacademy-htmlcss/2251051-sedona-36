@@ -1340,9 +1340,10 @@ body {
     min-height: 448px;
 }
 
-/* .modal-close {
+.modal-close {
     display: none;
-} */
+}
+
 /* убирает отображение modal */
 
 .input-container {
