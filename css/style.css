@@ -1555,6 +1555,8 @@ body {
 }
 
 .counter:focus {
+    position: relative;
+    z-index: 1;
     outline: 3px solid #82b3d3;
 }
 
@@ -1612,8 +1614,8 @@ body {
     background-image: url("../images/modal/plus-grey.svg");
 }
 
-.button-minus:focus-visible,
-.button-plus:focus-visible {
+.button-minus:focus,
+.button-plus:focus {
     outline: 3px solid #82b3d3;
 }
 
