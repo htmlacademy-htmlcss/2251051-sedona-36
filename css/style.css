@@ -357,7 +357,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     padding-top: 96px;
-    padding-bottom: 104px;
+    padding-bottom: 105px;
     text-align: center;
 }
 
@@ -399,7 +399,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    padding-top: 96px;
+    padding-top: 156px;
     padding-bottom: 104px;
     text-align: center;
 }
@@ -422,7 +422,7 @@ body {
 }
 
 .footer-contacts {
-    padding: 45px 70px 35px;
+    padding: 46px 70px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -433,6 +433,7 @@ body {
     width: 47px;
     align-items: stretch;
     justify-content: center;
+    padding-bottom: 2px;
 }
 
 .footer-social-item a {
@@ -450,6 +451,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #000000;
+    padding-left: 2px;
 }
 
 /* --- the hotels --- */
@@ -465,7 +467,7 @@ body {
 }
 
 .hotel-pick-wrapper {
-    padding: 35px 70px 70px
+    padding: 35px 70px 73px;
 }
 
 .hotels-pick {
@@ -556,12 +558,12 @@ body {
 }
 
 .hotels-filter-group:nth-child(1) {
-    margin-right: 70px;
+    margin-right: 68px;
 }
 
 .hotels-filter-group:nth-child(2) {
     width: 152px;
-    margin-right: 135px;
+    margin-right: 136px;
 }
 
 .hotels-filter-group:nth-child(3) {
@@ -650,10 +652,11 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     margin: 0;
-    padding: 16px 0;
+    padding: 5px 0;
 }
 
 .select-control {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
     width: 292px;
@@ -722,7 +725,7 @@ body {
     line-height: 28px;
     color: #000000;
     margin: 0;
-    padding: 16px 0;
+    padding: 10px 0 18px;
 }
 
 .hotel-card-link {
@@ -763,7 +766,7 @@ body {
 .pagination-list {
     margin: 0;
     padding: 0;
-    padding-top: 40px;
+    padding-top: 39px;
     display: flex;
 }
 
@@ -914,10 +917,11 @@ body {
     min-height: 36px;
     background-color: #82b3d3;
     padding: 8px 50px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
 }
 
 .reset-button {
+    margin-bottom: -3px;
     min-height: 36px;
     background: none;
     padding: 8px 50px;
