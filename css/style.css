@@ -377,6 +377,7 @@ body {
 }
 
 .subscribe-form-field input {
+    font-family: "PT Sans", Arial, sans-serif;
     box-sizing: border-box;
     background-color: #f2f2f2;
     font-size: 18px;
@@ -822,6 +823,7 @@ body {
 }
 
 .subscribe-button {
+    font-family: "PT Sans", Arial, sans-serif;
     padding: 0 50px;
     min-height: 52px;
     background-color: #82b3d3;
@@ -861,7 +863,7 @@ body {
 
 .navigation-user-favorites-number {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     box-sizing: border-box;
     padding: 5px;
@@ -1626,4 +1628,16 @@ body {
     line-height: 24px;
     background-color: #83b3d3;
     border-radius: 10px;
+}
+
+/* --- pixel perfect --- */
+
+.search-icon {
+    padding-right: 8px;
+    margin-top: 4px;
+}
+
+.favorites-icon {
+    padding-right: 12px;
+    margin-top: 4px;
 }
