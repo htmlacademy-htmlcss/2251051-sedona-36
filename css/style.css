@@ -133,10 +133,10 @@ body {
 }
 
 .hero-background {
+    background-color: #756157;
     background-image: url(../images/backgrounds/index-background.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #756157;
     text-align: center;
 }
 
@@ -352,10 +352,10 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #756157;
     background-image: url(../images/backgrounds/subscribe.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #756157;
     padding-top: 96px;
     padding-bottom: 104px;
     text-align: center;
@@ -457,10 +457,10 @@ body {
 
 .hotel-catalog {
     position: relative;
+    background-color: #756157;
     background-image: url(../images/backgrounds/catalog-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #756157;
 }
 
 .hotel-pick-wrapper {
@@ -483,7 +483,7 @@ body {
     margin-left: auto;
 }
 
-/* --- breadcrumbs ver 2 --- */
+/* --- breadcrumbs --- */
 
 .breadcrumbs-list {
     display: flex;
@@ -1011,17 +1011,17 @@ body {
 /* --- button blue --- */
 
 .button-blue:hover {
-    background-color: #68A2CA;
+    background-color: #68a2ca;
     cursor: pointer;
 }
 
 .button-blue:focus {
-    background-color: #68A2CA;
+    background-color: #68a2ca;
     outline: none;
 }
 
 .button-blue:active {
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1103,7 +1103,6 @@ body {
     fill: rgba(255, 255, 255, 0.3);
 }
 
-/* случайно удалил три блока */
 /* --- button view --- */
 
 .button-view:hover {
@@ -1145,7 +1144,6 @@ body {
 .control:hover .control-mark {
     background-color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
-
 }
 
 .control:focus-within .control-mark {
@@ -1167,7 +1165,7 @@ body {
 .button-green:disabled,
 .button-brown:disabled,
 .button-blue:disabled {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     cursor: default;
 }
 
@@ -1325,7 +1323,6 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    display: flex;
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
@@ -1338,7 +1335,6 @@ body {
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-    /* overflow-y: auto; */
 }
 
 .modal input {
@@ -1591,7 +1587,6 @@ body {
 }
 
 .counter::-webkit-outer-spin-button,
-/* убирает стрелочки у input:number (в Firefox не работает)*/
 .counter::-webkit-inner-spin-button {
     margin: 0;
     -webkit-appearance: none;
