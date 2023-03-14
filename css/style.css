@@ -640,6 +640,12 @@ body {
     outline: 3px solid #68a2ca;
 }
 
+.control-input[type="text"]:not(:placeholder-shown):focus {
+    background-color: #F2F2F2;
+    border: solid 2px #000000;
+    outline: none;
+}
+
 /* --- section hotels --- */
 
 /* --- hotels found --- */
@@ -1578,6 +1584,7 @@ body {
     margin-right: -5px;
     background-image: url("../images/modal/minus-grey.svg");
     background-position: 50% 50%;
+    padding: 14px 10px;
     background-repeat: no-repeat;
     border-radius: 4px 0 0 4px;
     cursor: pointer;
@@ -1587,6 +1594,7 @@ body {
     margin-left: -5px;
     background-image: url("../images/modal/plus-grey.svg");
     background-position: 50% 50%;
+    padding: 14px 10px;
     background-repeat: no-repeat;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -1627,21 +1635,23 @@ body {
     background-image: url("../images/modal/plus-grey.svg");
 }
 
-/* .button-minus:focus,
+.button-minus:focus,
 .button-plus:focus {
-    outline: 3px solid #82b3d3;
-} */
-
-.button-minus:focus {
     width: 20px;
     height: 20px;
-    border: 3px solid #82B3D3;
-    border-radius: 4px;
+    padding: 14px 10px;
+    text-align: center;
+    vertical-align: middle;
+    outline: 3px solid #82b3d3;
+
 }
 
 .counter-group-container {
     margin: 0;
     padding: 0;
+    background-color: #f2f2f2;
+    border-radius: 4px 4px;
+    min-width: 110px;
 }
 
 .search-form-button {
@@ -1663,6 +1673,12 @@ body {
 .field:focus {
     background-color: #e6e6e6;
     outline: 3px solid #83b3d3;
+}
+
+.field:not(:placeholder-shown):focus {
+    background-color: #f2f2f2;
+    border: solid 2px #000000;
+    outline: none;
 }
 
 /* --- pixel perfect --- */
