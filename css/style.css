@@ -632,7 +632,7 @@ body {
 
 .control-input[type="radio"]:focus + .control-mark {
     outline: solid 2px #83b3d3;
-  }
+}
 
 .control-input[type="text"]:hover {
     background-color: #e6e6e6;
@@ -956,6 +956,13 @@ body {
 
 /* --- display config --- */
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+    outline: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .navigation-link::before {
     opacity: 0;
     content: "";
@@ -967,6 +974,10 @@ body {
     height: 2px;
     transition: all 0.3s ease;
     z-index: 1;
+}
+
+.navigation-link-current {
+    cursor: pointer;
 }
 
 .navigation-link-current::before {

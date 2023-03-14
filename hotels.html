@@ -13,7 +13,7 @@
     <div class="page-wrapper">
       <!-- Шапка сайта, навигация -->
       <header class="main-header">
-        <a class="header-logo">
+        <a class="header-logo" href="index.html">
           <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70" alt="Логотип сайта Sedona">
         </a>
         <nav class="navigation">
@@ -23,10 +23,10 @@
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Cедоне</a>
+              <a class="navigation-link" href="about.html">О Cедоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="hotels.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current">Гостиницы</a>
             </li>
           </ul>
           <!--Поиск, избранное, кнопка-->
@@ -243,12 +243,12 @@
                 <span class="hotel-card-price">От 4000 ₽</span>
               </div>
               <div class="hotel-card-buttons">
-                <button class="button hotel-card-more-button button-brown">Подробнее</button>
-                <button class="button hotel-card-favorites-button button-blue">В избранное</button>
+                <button class="button hotel-card-more-button button-brown" type="about">Подробнее</button>
+                <button class="button hotel-card-favorites-button button-blue" type="add-favorites">В избранное</button>
               </div>
               <div class="hotel-card-ratings">
                 <img class="stars" src="images/stars/star-4x.svg" alt="4 звезды">
-                <button class="button hotel-card-rating">Рейтинг: 8,5</button>
+                <p class="button hotel-card-rating">Рейтинг: 8,5</p>
               </div>
             </li>
             <li class="hotel-card">
@@ -261,12 +261,12 @@
                 <span class="hotel-card-price">От 5000 ₽</span>
               </div>
               <div class="hotel-card-buttons">
-                <button class="button hotel-card-more-button button-brown">Подробнее</button>
-                <button class="button button-green">В избраннoм</button>
+                <button class="button hotel-card-more-button button-brown" type="about">Подробнее</button>
+                <button class="button button-green" type="in-favorites">В избраннoм</button>
               </div>
               <div class="hotel-card-ratings">
                 <img class="stars" src="images/stars/star-4x.svg" alt="4 звезды">
-                <button class="button hotel-card-rating">Рейтинг: 9,2</button>
+                <p class="button hotel-card-rating">Рейтинг: 9,2</p>
               </div>
             </li>
             <li class="hotel-card">
@@ -279,12 +279,12 @@
                 <span class="hotel-card-price">От 2500 ₽</span>
               </div>
               <div class="hotel-card-buttons">
-                <button class="button hotel-card-more-button button-brown">Подробнее</button>
-                <button class="button hotel-card-favorites-button button-blue">В избранное</button>
+                <button class="button hotel-card-more-button button-brown" type="about">Подробнее</button>
+                <button class="button hotel-card-favorites-button button-blue" type="add-favorites">В избранное</button>
               </div>
               <div class="hotel-card-ratings">
                 <img class="stars" src="images/stars/star-3x.svg" alt="3 звезды">
-                <button class="button hotel-card-rating">Рейтинг: 6,9</button>
+                <a class="button hotel-card-rating">Рейтинг: 6,9</a>
               </div>
             </li>
             <li class="hotel-card">
@@ -297,34 +297,34 @@
                 <span class="hotel-card-price">От 1500 ₽</span>
               </div>
               <div class="hotel-card-buttons">
-                <button class="button hotel-card-more-button button-brown">Подробнее</button>
-                <button class="button hotel-card-favorites-button button-blue">В избранное</button>
+                <button class="button hotel-card-more-button button-brown" type="about">Подробнее</button>
+                <button class="button hotel-card-favorites-button button-blue" type="add-favorites">В избранное</button>
               </div>
               <div class="hotel-card-ratings">
                 <img class="stars" src="images/stars/star-2x.svg" alt="2 звезды">
-                <button class="button hotel-card-rating">Рейтинг: 5,0</button>
+                <p class="button hotel-card-rating">Рейтинг: 5,0</p>
               </div>
             </li>
           </ul>
           <h2 class="visually-hidden">Навигация по страницам</h2>
           <ol class="pagination-list">
             <li class="pagination-item">
-              <button class="pagination-button pagination-current">1</button>
+              <button class="pagination-button pagination-current" type="pagination">1</button>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button button-blue">2</button>
+              <button class="pagination-button button-blue" type="pagination">2</button>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button button-blue">3</button>
+              <button class="pagination-button button-blue" type="pagination">3</button>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button button-blue">4</button>
+              <button class="pagination-button button-blue" type="pagination">4</button>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button pagination-disabled" disabled>...</button>
+              <button class="pagination-button pagination-disabled" type="pagination" disabled>...</button>
             </li>
             <li class="pagination-item">
-              <button class="pagination-button button-blue">10</button>
+              <button class="pagination-button button-blue" type="pagination">10</button>
             </li>
           </ol>
         </section>
