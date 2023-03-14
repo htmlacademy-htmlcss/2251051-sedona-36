@@ -1630,6 +1630,7 @@ body {
 }
 
 input[type=number] {
+    appearance: none;
     -moz-appearance: textfield;
 }
 
@@ -1653,6 +1654,7 @@ input[type=number] {
 .button-plus:focus {
     outline: 3px solid #82b3d3;
     border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .counter-group-container {
