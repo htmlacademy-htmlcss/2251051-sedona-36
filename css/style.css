@@ -630,6 +630,10 @@ body {
     content: "";
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+    outline: solid 2px #83b3d3;
+  }
+
 .control-input[type="text"]:hover {
     background-color: #e6e6e6;
     outline: 3px solid #000000;
@@ -1170,7 +1174,7 @@ body {
     cursor: pointer;
 }
 
-.control:focus .control-mark {
+.control-input[type="checkbox"]:focus + .control-mark {
     outline: 3px solid #83b3d3;
 }
 
