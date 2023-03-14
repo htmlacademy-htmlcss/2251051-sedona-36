@@ -12,12 +12,13 @@
     <div class="page-wrapper">
       <!-- Шапка сайта, навигация -->
       <header class="main-header">
+        <a class="header-logo">
+          <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70"
+            alt="Логотип сайта Sedona">
+        </a>
         <nav class="navigation">
           <!--Главная, О Седоне, Гостиницы-->
-          <a class="header-logo">
-            <img class="main-header-logo" src="images/vector-elements/header-logo.svg" width="140" height="70"
-              alt="Логотип сайта Sedona">
-          </a>
+
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -239,8 +240,7 @@
                   </button>
                   <div class="counter-form-name">
                     <label for="adults" class="visually-hidden">Количество</label>
-                    <input class="search-form-counter counter" type="number" name="adults" id="adults" value="2"
-                      required>
+                    <input class="search-form-counter counter" type="number" name="adults" id="adults" value="2" max="999" required>
                   </div>
                   <button class="search-form-counter button-plus" type="button">
                     <span class="visually-hidden">Плюс</span>
@@ -267,7 +267,7 @@
                   </button>
                   <div class="counter-form-name">
                     <label for="adults" class="visually-hidden">Количество</label>
-                    <input class="search-form-counter counter" type="number" name="childs" id="childs" value="2">
+                    <input class="search-form-counter counter" type="number" name="childs" id="childs" value="2" max="999">
                   </div>
                   <button class="search-form-counter button-plus" type="button">
                     <span class="visually-hidden">Плюс</span>

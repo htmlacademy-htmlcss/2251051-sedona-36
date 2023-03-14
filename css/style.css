@@ -79,11 +79,13 @@ body {
 
 .navigation {
     display: flex;
-    height: 64px;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 168px;
 }
 
 .main-header-logo {
-    position: relative;
+    position: absolute;
     margin-right: 28px;
     z-index: 1;
 }
@@ -94,7 +96,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
 }
 
 .navigation-link {
@@ -106,7 +107,7 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     color: #000000;
-    padding: 20px 16px;
+    padding: 20px 16px 19px;
 }
 
 .navigation-item:nth-child(1) .button,
@@ -147,17 +148,23 @@ body {
 }
 
 .divider {
-    margin-bottom: -4px;
+    margin-bottom: -5px;
 }
 
 /* --- advantages --- */
+
+.advantages-image {
+    object-fit: cover;
+    min-height: 385px;
+    height: 100%;
+}
 
 .advantages-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 69px 0 89px;
+    padding: 70px 24px 90px;
 }
 
 .advantages-main-title,
@@ -214,6 +221,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 400px;
+    padding: 0 24px;
 }
 
 .advantages-wrapper-full h3,
@@ -238,6 +246,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     max-width: 175px;
+    word-break: break-word;
 }
 
 .advantages-title::after {
@@ -275,6 +284,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 24px;
 }
 
 .advantages-item:nth-child(2),
@@ -293,7 +303,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 65px 0 62px;
+    padding: 65px 24px 62px;
 }
 
 .services-main-title {
@@ -314,7 +324,7 @@ body {
 
 .services-item {
     background-color: #ffffff;
-    padding: 82px 0;
+    padding: 82px 24px;
 }
 
 .services-image {
@@ -329,7 +339,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 96px 0;
+    padding: 96px 24px;
 }
 
 .search-main-title {
@@ -354,8 +364,7 @@ body {
     background-image: url(../images/backgrounds/subscribe.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    padding-top: 96px;
-    padding-bottom: 105px;
+    padding: 96px 24px 105px;
     text-align: center;
 }
 
@@ -416,7 +425,7 @@ body {
     margin: 0 auto;
     list-style-type: none;
     align-items: center;
-    justify-content: center;
+    max-width: 150px;
 }
 
 .footer-contacts {
@@ -474,7 +483,7 @@ body {
     line-height: 78px;
     color: #ffffff;
     margin: 0;
-    margin-bottom: -12px;
+    margin-bottom: 3px;
 }
 
 .box-hotel-filter-buttons {
@@ -491,7 +500,7 @@ body {
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
     margin-left: -10px;
     list-style-type: none;
 }
@@ -502,7 +511,7 @@ body {
 
 .breadcrumbs-item::after {
     position: absolute;
-    top: 34%;
+    top: 18%;
     display: inline-block;
     width: 7px;
     height: 21px;
@@ -520,7 +529,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     display: inline-block;
-    padding: 20px 10px;
+    padding: 6px 10px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -587,6 +596,10 @@ body {
 }
 
 /* --- radio button and box style --- */
+
+.control-label {
+    word-break: break-word;
+}
 
 .control-mark {
     position: absolute;
@@ -808,7 +821,7 @@ body {
 
 .want-here-button {
     width: 160px;
-    height: 36px;
+    min-height: 36px;
     background-color: #756157;
 }
 
@@ -817,7 +830,7 @@ body {
     box-sizing: border-box;
     font-size: 20px;
     line-height: 36px;
-    min-width: 376px;
+    width: 376px;
     min-height: 52px;
     background-color: #756157;
     text-align: center;
@@ -826,6 +839,7 @@ body {
 .subscribe-button {
     font-family: "PT Sans", Arial, sans-serif;
     padding: 0 50px;
+    width: 232px;
     min-height: 52px;
     background-color: #82b3d3;
     color: #ffffff;
@@ -842,7 +856,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
+    max-width: 170px;
 }
 
 .buttons-view-item:not(:last-child) {
@@ -864,8 +880,8 @@ body {
 
 .navigation-user-favorites-number {
     position: absolute;
-    top: 15%;
-    left: 50%;
+    top: -18%;
+    left: 45%;
     box-sizing: border-box;
     padding: 5px;
     padding-left: 4px;
@@ -938,11 +954,12 @@ body {
     content: "";
     position: absolute;
     right: 16px;
-    bottom: 0;
+    bottom: -1px;
     left: 16px;
     background-color: #756257;
     height: 2px;
     transition: all 0.3s ease;
+    z-index: 1;
 }
 
 .navigation-link-current::before {
@@ -1635,11 +1652,12 @@ body {
 /* --- pixel perfect --- */
 
 .search-icon {
-    padding-right: 8px;
-    margin-top: 4px;
+    /* padding-right: 8px;
+    padding-top: 19px; */
+    padding: 5px 12px 0;
 }
 
 .favorites-icon {
-    padding-right: 12px;
-    margin-top: 4px;
+    /* padding-right: 12px; */
+    padding: 5px 12px 0;
 }
