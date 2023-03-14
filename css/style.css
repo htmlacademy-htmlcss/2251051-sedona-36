@@ -1164,7 +1164,7 @@ body {
     cursor: pointer;
 }
 
-.control:focus-within .control-mark {
+.control:focus .control-mark {
     outline: 3px solid #83b3d3;
 }
 
@@ -1644,6 +1644,18 @@ body {
     line-height: 24px;
     background-color: #83b3d3;
     border-radius: 10px;
+}
+
+/* --- field --- */
+
+.field:hover {
+    background-color: #e6e6e6;
+    transition: all 0.3s ease;
+}
+
+.field:focus-visible {
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
 }
 
 /* --- pixel perfect --- */
