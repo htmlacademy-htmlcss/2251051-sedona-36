@@ -29,6 +29,7 @@ html {
     height: 100%;
 }
 
+
 .visually-hidden {
     position: absolute;
     overflow: hidden;
@@ -1626,7 +1627,12 @@ body {
 .counter::-webkit-inner-spin-button {
     margin: 0;
     -webkit-appearance: none;
+    -moz-appearance: textfield;
     appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .button-minus:hover {
