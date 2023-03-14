@@ -1581,20 +1581,24 @@ body {
 }
 
 .button-minus {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
     margin-right: -5px;
     background-image: url("../images/modal/minus-grey.svg");
     background-position: 50% 50%;
-    padding: 14px 10px;
     background-repeat: no-repeat;
     border-radius: 4px 0 0 4px;
     cursor: pointer;
 }
 
 .button-plus {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
     margin-left: -5px;
     background-image: url("../images/modal/plus-grey.svg");
     background-position: 50% 50%;
-    padding: 14px 10px;
     background-repeat: no-repeat;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
@@ -1602,14 +1606,6 @@ body {
 
 .button-plus::after {
     transform: translateX(-7px) rotate(90deg);
-}
-
-.button-minus,
-.button-plus {
-    position: relative;
-    width: 40px;
-    -webkit-appearance: none;
-    appearance: none;
 }
 
 .counter::-webkit-outer-spin-button,
@@ -1637,21 +1633,19 @@ body {
 
 .button-minus:focus,
 .button-plus:focus {
-    width: 20px;
-    height: 20px;
-    padding: 14px 10px;
-    text-align: center;
-    vertical-align: middle;
     outline: 3px solid #82b3d3;
-
+    border-radius: 4px;
 }
 
 .counter-group-container {
+    min-width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f2f2f2;
+    border-radius: 4px;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
-    border-radius: 4px 4px;
-    min-width: 110px;
 }
 
 .search-form-button {
