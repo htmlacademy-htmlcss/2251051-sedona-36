@@ -1591,6 +1591,7 @@ body {
     position: relative;
     z-index: 1;
     outline: 3px solid #82b3d3;
+    transition: all 0.3s ease;
 }
 
 .button-minus {
