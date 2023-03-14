@@ -176,7 +176,6 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
     margin-bottom: 20px;
     margin-top: 0;
 
@@ -268,8 +267,6 @@ body {
 
 .advantages-description,
 .services-description {
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
     color: #333333;
     max-width: 230px;
