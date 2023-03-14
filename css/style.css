@@ -195,7 +195,6 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 385px 385px 385px;
 }
 
 /* --- advantages-item-full --- */
@@ -307,7 +306,6 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 385px;
 }
 
 .services-item:nth-child(odd) {
