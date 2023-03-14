@@ -293,7 +293,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 64px 0;
+    padding: 65px 0 62px;
 }
 
 .services-main-title {
