@@ -1678,12 +1678,9 @@ body {
 /* --- pixel perfect --- */
 
 .search-icon {
-    /* padding-right: 8px;
-    padding-top: 19px; */
     padding: 5px 12px 0;
 }
 
 .favorites-icon {
-    /* padding-right: 12px; */
     padding: 5px 12px 0;
 }
