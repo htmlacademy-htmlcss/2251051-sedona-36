@@ -1653,7 +1653,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.field:focus-visible {
+.field:focus {
     background-color: #e6e6e6;
     outline: 3px solid #83b3d3;
 }
