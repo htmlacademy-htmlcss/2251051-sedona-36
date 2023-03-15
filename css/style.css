@@ -21,19 +21,12 @@
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
     box-sizing: border-box;
     height: 100%;
-}
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
 }
 
 .visually-hidden {
@@ -45,10 +38,6 @@ p {
     margin: -1px;
     padding: 0;
     border: 0;
-}
-
-li {
-    list-style-type: none;
 }
 
 /* --- body --- */
@@ -79,11 +68,13 @@ body {
 
 .navigation {
     display: flex;
-    height: 64px;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 168px;
 }
 
 .main-header-logo {
-    position: relative;
+    position: absolute;
     margin-right: 28px;
     z-index: 1;
 }
@@ -94,7 +85,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
+    list-style-type: none;
 }
 
 .navigation-link {
@@ -106,7 +97,7 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     color: #000000;
-    padding: 20px 16px;
+    padding: 20px 16px 19px;
 }
 
 .navigation-item:nth-child(1) .button,
@@ -120,6 +111,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
+    list-style-type: none;
 }
 
 .navigation-user li:last-child {
@@ -133,10 +125,10 @@ body {
 }
 
 .hero-background {
+    background-color: #756157;
     background-image: url(../images/backgrounds/index-background.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #756157;
     text-align: center;
 }
 
@@ -147,17 +139,23 @@ body {
 }
 
 .divider {
-    margin-bottom: -4px;
+    margin-bottom: -5px;
 }
 
 /* --- advantages --- */
+
+.advantages-image {
+    object-fit: cover;
+    min-height: 385px;
+    height: 100%;
+}
 
 .advantages-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 69px 0 89px;
+    padding: 70px 24px 90px;
 }
 
 .advantages-main-title,
@@ -169,15 +167,12 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
-    margin-bottom: 20px;
-    margin-top: 0;
-
+    margin: 0 0 20px 0;
 }
 
 .advantages-main-title {
     max-width: 620px;
-    margin-bottom: 25px;
+    margin: 0 0 25px;
 }
 
 .advantages-main-description,
@@ -188,6 +183,7 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
+    margin: 0;
 }
 
 .advantages-list {
@@ -195,7 +191,7 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 385px 385px 385px;
+    list-style-type: none;
 }
 
 /* --- advantages-item-full --- */
@@ -215,12 +211,14 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 400px;
+    padding: 0 24px;
 }
 
 .advantages-wrapper-full h3,
 .advantages-wrapper h3 {
     position: relative;
     padding-bottom: 31px;
+    margin: 0;
 }
 
 .advantages-wrapper {
@@ -239,6 +237,8 @@ body {
     text-align: center;
     text-transform: uppercase;
     max-width: 175px;
+    word-break: break-word;
+    margin: 0;
 }
 
 .advantages-title::after {
@@ -260,12 +260,11 @@ body {
 
 .advantages-description,
 .services-description {
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
     color: #333333;
     max-width: 230px;
     padding-top: 31px;
+    margin: 0;
 }
 
 /* --- advantages-item --- */
@@ -276,6 +275,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 24px;
 }
 
 .advantages-item:nth-child(2),
@@ -294,12 +294,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 64px 0;
+    padding: 65px 24px 62px;
 }
 
 .services-main-title {
     max-width: 505px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 
 .services-list {
@@ -307,7 +307,7 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 385px;
+    list-style-type: none;
 }
 
 .services-item:nth-child(odd) {
@@ -316,7 +316,7 @@ body {
 
 .services-item {
     background-color: #ffffff;
-    padding: 82px 0;
+    padding: 82px 24px;
 }
 
 .services-image {
@@ -331,17 +331,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 96px 0;
+    padding: 96px 24px;
 }
 
 .search-main-title {
     max-width: 505px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
 }
 
 .search-main-description {
     max-width: 592px;
-    margin-bottom: 54px;
+    margin: 0 0 54px 0;
 }
 
 /* --- subscribe --- */
@@ -352,18 +352,17 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #756157;
     background-image: url(../images/backgrounds/subscribe.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #756157;
-    padding-top: 96px;
-    padding-bottom: 104px;
+    padding: 96px 24px 105px;
     text-align: center;
 }
 
 .subscribe-main-description {
     max-width: 475px;
-    margin-bottom: 54px;
+    margin: 0 0 54px 0;
 }
 
 .subscribe-form {
@@ -377,6 +376,7 @@ body {
 }
 
 .subscribe-form-field input {
+    font-family: "PT Sans", Arial, sans-serif;
     box-sizing: border-box;
     background-color: #f2f2f2;
     font-size: 18px;
@@ -398,7 +398,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    padding-top: 96px;
+    padding-top: 156px;
     padding-bottom: 104px;
     text-align: center;
 }
@@ -417,11 +417,11 @@ body {
     margin: 0 auto;
     list-style-type: none;
     align-items: center;
-    justify-content: center;
+    max-width: 150px;
 }
 
 .footer-contacts {
-    padding: 45px 70px 35px;
+    padding: 46px 70px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -432,6 +432,7 @@ body {
     width: 47px;
     align-items: stretch;
     justify-content: center;
+    padding-bottom: 2px;
 }
 
 .footer-social-item a {
@@ -449,6 +450,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #000000;
+    padding-left: 2px;
 }
 
 /* --- the hotels --- */
@@ -457,14 +459,14 @@ body {
 
 .hotel-catalog {
     position: relative;
+    background-color: #756157;
     background-image: url(../images/backgrounds/catalog-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #756157;
 }
 
 .hotel-pick-wrapper {
-    padding: 35px 70px 70px
+    padding: 35px 70px 73px;
 }
 
 .hotels-pick {
@@ -473,7 +475,7 @@ body {
     line-height: 78px;
     color: #ffffff;
     margin: 0;
-    margin-bottom: -12px;
+    margin-bottom: 3px;
 }
 
 .box-hotel-filter-buttons {
@@ -483,14 +485,14 @@ body {
     margin-left: auto;
 }
 
-/* --- breadcrumbs ver 2 --- */
+/* --- breadcrumbs --- */
 
 .breadcrumbs-list {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 34px;
     margin-left: -10px;
     list-style-type: none;
 }
@@ -501,7 +503,7 @@ body {
 
 .breadcrumbs-item::after {
     position: absolute;
-    top: 34%;
+    top: 18%;
     display: inline-block;
     width: 7px;
     height: 21px;
@@ -519,7 +521,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     display: inline-block;
-    padding: 20px 10px;
+    padding: 6px 10px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -545,7 +547,7 @@ body {
     font-size: 20px;
     line-height: 24px;
     color: #ffffff;
-    margin-bottom: 32px;
+    margin: 0 0 32px 0;
 }
 
 .hotels-filter-group {
@@ -555,12 +557,12 @@ body {
 }
 
 .hotels-filter-group:nth-child(1) {
-    margin-right: 70px;
+    margin-right: 68px;
 }
 
 .hotels-filter-group:nth-child(2) {
     width: 152px;
-    margin-right: 135px;
+    margin-right: 136px;
 }
 
 .hotels-filter-group:nth-child(3) {
@@ -570,6 +572,7 @@ body {
 .hotels-filter-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .hotels-filter-item:not(:last-child) {
@@ -586,6 +589,10 @@ body {
 }
 
 /* --- radio button and box style --- */
+
+.control-label {
+    word-break: break-word;
+}
 
 .control-mark {
     position: absolute;
@@ -619,6 +626,10 @@ body {
     content: "";
 }
 
+.control-input[type="radio"]:focus + .control-mark {
+    outline: solid 2px #83b3d3;
+}
+
 .control-input[type="text"]:hover {
     background-color: #e6e6e6;
     outline: 3px solid #000000;
@@ -627,6 +638,12 @@ body {
 .control-input[type="text"]:focus {
     background-color: #e6e6e6;
     outline: 3px solid #68a2ca;
+}
+
+.control-input[type="text"]:not(:placeholder-shown):focus {
+    background-color: #F2F2F2;
+    border: solid 2px #000000;
+    outline: none;
 }
 
 /* --- section hotels --- */
@@ -649,10 +666,11 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     margin: 0;
-    padding: 16px 0;
+    padding: 5px 0;
 }
 
 .select-control {
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 18px;
     line-height: 21px;
     width: 292px;
@@ -678,6 +696,7 @@ body {
     padding-bottom: 40px;
     gap: 20px;
     position: relative;
+    list-style-type: none;
 }
 
 .hotel-card-list::after {
@@ -707,7 +726,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
 
 .hotel-card-ratings {
@@ -721,7 +740,7 @@ body {
     line-height: 28px;
     color: #000000;
     margin: 0;
-    padding: 16px 0;
+    padding: 10px 0 18px;
 }
 
 .hotel-card-link {
@@ -756,14 +775,15 @@ body {
     border-radius: 4px;
     width: 60px;
     height: 60px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .pagination-list {
     margin: 0;
     padding: 0;
-    padding-top: 40px;
+    padding-top: 39px;
     display: flex;
+    list-style-type: none;
 }
 
 .pagination-button:not(.pagination-current, .pagination-disabled):hover {
@@ -806,7 +826,7 @@ body {
 
 .want-here-button {
     width: 160px;
-    height: 36px;
+    min-height: 36px;
     background-color: #756157;
 }
 
@@ -815,14 +835,16 @@ body {
     box-sizing: border-box;
     font-size: 20px;
     line-height: 36px;
-    min-width: 376px;
+    width: 376px;
     min-height: 52px;
     background-color: #756157;
     text-align: center;
 }
 
 .subscribe-button {
+    font-family: "PT Sans", Arial, sans-serif;
     padding: 0 50px;
+    width: 232px;
     min-height: 52px;
     background-color: #82b3d3;
     color: #ffffff;
@@ -839,7 +861,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
+    max-width: 170px;
 }
 
 .buttons-view-item:not(:last-child) {
@@ -861,8 +885,8 @@ body {
 
 .navigation-user-favorites-number {
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: -18%;
+    left: 45%;
     box-sizing: border-box;
     padding: 5px;
     padding-left: 4px;
@@ -912,10 +936,11 @@ body {
     min-height: 36px;
     background-color: #82b3d3;
     padding: 8px 50px;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
 }
 
 .reset-button {
+    margin-bottom: -3px;
     min-height: 36px;
     background: none;
     padding: 8px 50px;
@@ -929,16 +954,28 @@ body {
 
 /* --- display config --- */
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+    outline: none;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .navigation-link::before {
     opacity: 0;
     content: "";
     position: absolute;
     right: 16px;
-    bottom: 0;
+    bottom: -1px;
     left: 16px;
     background-color: #756257;
     height: 2px;
     transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.navigation-link-current {
+    cursor: pointer;
 }
 
 .navigation-link-current::before {
@@ -1011,17 +1048,17 @@ body {
 /* --- button blue --- */
 
 .button-blue:hover {
-    background-color: #68A2CA;
+    background-color: #68a2ca;
     cursor: pointer;
 }
 
 .button-blue:focus {
-    background-color: #68A2CA;
+    background-color: #68a2ca;
     outline: none;
 }
 
 .button-blue:active {
-    background-color: #82B3D3;
+    background-color: #82b3d3;
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -1038,6 +1075,10 @@ body {
 
 .social-button:focus .social-icon {
     fill: #68a2ca;
+    outline: none;
+}
+
+.social-button:focus {
     outline: none;
 }
 
@@ -1103,7 +1144,6 @@ body {
     fill: rgba(255, 255, 255, 0.3);
 }
 
-/* случайно удалил три блока */
 /* --- button view --- */
 
 .button-view:hover {
@@ -1145,10 +1185,9 @@ body {
 .control:hover .control-mark {
     background-color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
-
 }
 
-.control:focus-within .control-mark {
+.control-input[type="checkbox"]:focus + .control-mark {
     outline: 3px solid #83b3d3;
 }
 
@@ -1167,7 +1206,7 @@ body {
 .button-green:disabled,
 .button-brown:disabled,
 .button-blue:disabled {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     cursor: default;
 }
 
@@ -1198,7 +1237,7 @@ body {
 }
 
 .filter-form-title {
-    margin-bottom: 32px;
+    margin: 0 0 32px 0;
     padding: 0;
     font-size: 20px;
     line-height: 24px;
@@ -1325,7 +1364,6 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    display: flex;
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
@@ -1338,7 +1376,6 @@ body {
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-    /* overflow-y: auto; */
 }
 
 .modal input {
@@ -1558,9 +1595,13 @@ body {
     position: relative;
     z-index: 1;
     outline: 3px solid #82b3d3;
+    transition: all 0.3s ease;
 }
 
 .button-minus {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
     margin-right: -5px;
     background-image: url("../images/modal/minus-grey.svg");
     background-position: 50% 50%;
@@ -1570,6 +1611,9 @@ body {
 }
 
 .button-plus {
+    width: 20px;
+    height: 20px;
+    padding: 3px;
     margin-left: -5px;
     background-image: url("../images/modal/plus-grey.svg");
     background-position: 50% 50%;
@@ -1582,20 +1626,17 @@ body {
     transform: translateX(-7px) rotate(90deg);
 }
 
-.button-minus,
-.button-plus {
-    position: relative;
-    width: 40px;
-    -webkit-appearance: none;
-    appearance: none;
-}
-
 .counter::-webkit-outer-spin-button,
-/* убирает стрелочки у input:number (в Firefox не работает)*/
 .counter::-webkit-inner-spin-button {
     margin: 0;
     -webkit-appearance: none;
+    -moz-appearance: textfield;
     appearance: none;
+}
+
+input[type=number] {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .button-minus:hover {
@@ -1617,9 +1658,17 @@ body {
 .button-minus:focus,
 .button-plus:focus {
     outline: 3px solid #82b3d3;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
 .counter-group-container {
+    min-width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f2f2f2;
+    border-radius: 4px;
     margin: 0;
     padding: 0;
 }
@@ -1631,4 +1680,32 @@ body {
     line-height: 24px;
     background-color: #83b3d3;
     border-radius: 10px;
+}
+
+/* --- field --- */
+
+.field:hover {
+    background-color: #e6e6e6;
+    transition: all 0.3s ease;
+}
+
+.field:focus {
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
+}
+
+.field:not(:placeholder-shown):focus {
+    background-color: #f2f2f2;
+    border: solid 2px #000000;
+    outline: none;
+}
+
+/* --- pixel perfect --- */
+
+.search-icon {
+    padding: 5px 12px 0;
+}
+
+.favorites-icon {
+    padding: 5px 12px 0;
 }
