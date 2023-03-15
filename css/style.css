@@ -1078,6 +1078,10 @@ body {
     outline: none;
 }
 
+.social-button:focus {
+    outline: none;
+}
+
 .social-button:active .social-icon {
     fill: rgba(104, 162, 202, 0.3);
 }
